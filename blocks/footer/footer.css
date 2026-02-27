@@ -1,20 +1,203 @@
+/* Footer styles */
 footer {
-  background-color: var(--light-color);
-  font-size: var(--body-font-size-xs);
+  background-color: var(--color-background-white, #fff);
+  font-size: var(--body-font-size-s, 14px);
+  border-top: 1px solid var(--color-border-light, #d7dbdb);
 }
 
 footer .footer > div {
   margin: auto;
   max-width: 1200px;
-  padding: 40px 24px 24px;
+  padding: 48px 40px 32px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+}
+
+@media (width >= 900px) {
+  footer .footer > div {
+    grid-template-columns: minmax(280px, 1fr) minmax(200px, 1fr) minmax(200px, 1fr);
+    gap: 48px;
+  }
 }
 
 footer .footer p {
   margin: 0;
 }
 
-@media (width >= 900px) {
+/* Override any default section styling */
+footer .footer .section {
+  padding: 0;
+  margin: 0;
+}
+
+footer .footer .default-content-wrapper {
+  max-width: 100%;
+  padding: 0;
+}
+
+/* First section - Brand column */
+footer .footer > div > .section:first-child {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+}
+
+footer .footer > div > .section:first-child .default-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+}
+
+/* Logo image in first paragraph - larger size like Figma */
+footer .footer > div > .section:first-child .default-content-wrapper > p:first-child picture,
+footer .footer > div > .section:first-child .default-content-wrapper > p:first-child img {
+  width: 180px;
+  height: auto;
+  margin-bottom: 16px;
+}
+
+footer .footer > div > .section:first-child p {
+  color: var(--color-text-primary, #363b3b);
+  font-size: var(--font-size-sm, 14px);
+  line-height: 1.6;
+}
+
+/* Hide the ID paragraph (p2 shows "ID-1234567890") */
+footer .footer > div > .section:first-child .default-content-wrapper > p:nth-child(2) {
+  display: none;
+}
+
+/* Description text - p3 "Market specific text..." */
+footer .footer > div > .section:first-child .default-content-wrapper > p:nth-child(3) {
+  margin-bottom: 24px;
+  max-width: 320px;
+}
+
+/* Social icons row - created by JS */
+footer .footer .social-icons {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  margin-top: 16px;
+  align-items: center;
+}
+
+/* stylelint-disable-next-line no-descending-specificity */
+footer .footer .social-icons p {
+  margin: 0;
+}
+
+/* stylelint-disable-next-line no-descending-specificity */
+footer .footer .social-icons picture,
+/* stylelint-disable-next-line no-descending-specificity */
+footer .footer .social-icons img {
+  width: 32px;
+  height: 40px;
+  margin: 0;
+  display: block;
+}
+
+/* CSS-only fallback for social icons in horizontal row */
+
+/* Target paragraphs 4+ (social icon paragraphs after logo, ID, and description) */
+footer .footer > div > .section:first-child .default-content-wrapper > p:nth-child(n+4) {
+  display: inline-block;
+  margin-right: 16px;
+  margin-bottom: 0;
+  vertical-align: middle;
+}
+
+/* Social icon images - force small size (p4 onwards) */
+footer .footer > div > .section:first-child .default-content-wrapper > p:nth-child(n+4) picture,
+footer .footer > div > .section:first-child .default-content-wrapper > p:nth-child(n+4) img {
+  width: 24px !important;
+  height: 24px !important;
+  max-width: 24px !important;
+  margin: 0;
+}
+
+/* Links columns (2nd and 3rd sections) */
+footer .footer > div > .section:nth-child(2),
+footer .footer > div > .section:nth-child(3) {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+footer .footer > div > .section:nth-child(2) .default-content-wrapper,
+footer .footer > div > .section:nth-child(3) .default-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* stylelint-disable-next-line no-descending-specificity */
+footer .footer > div > .section:nth-child(2) p,
+/* stylelint-disable-next-line no-descending-specificity */
+footer .footer > div > .section:nth-child(3) p {
+  margin: 0;
+}
+
+/* Reset button container styling */
+footer .footer .button-container {
+  margin: 0;
+}
+
+/* Reset ALL link/button styles in footer link columns - high specificity to override global styles */
+footer .footer > div > .section:nth-child(2) a.button:any-link,
+footer .footer > div > .section:nth-child(3) a.button:any-link,
+footer .footer > div > .section:nth-child(2) .button-container a.button,
+footer .footer > div > .section:nth-child(3) .button-container a.button {
+  color: var(--color-text-primary, #363b3b) !important;
+  text-decoration: none !important;
+  font-size: var(--font-size-md, 16px) !important;
+  line-height: 1.5 !important;
+  font-weight: 400 !important;
+  transition: color var(--transition-fast, 150ms) ease !important;
+  background: none !important;
+  background-color: transparent !important;
+  border: none !important;
+  border-radius: 0 !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  display: inline !important;
+  white-space: normal !important;
+}
+
+footer .footer > div > .section:nth-child(2) a.button:hover,
+footer .footer > div > .section:nth-child(3) a.button:hover {
+  color: var(--color-primary, #d0006f) !important;
+  background: none !important;
+  background-color: transparent !important;
+  text-decoration: none !important;
+}
+
+/* Version number - 4th section */
+footer .footer > div > .section:nth-child(4) {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 24px;
+  border-top: 1px solid var(--color-border-light, #d7dbdb);
+  margin-top: 16px;
+}
+
+/* stylelint-disable-next-line no-descending-specificity */
+footer .footer > div > .section:nth-child(4) p {
+  color: var(--color-text-secondary, #6b7280);
+  font-size: var(--font-size-sm, 14px);
+}
+
+/* Mobile styles */
+@media (width < 900px) {
   footer .footer > div {
-    padding: 40px 32px 24px;
+    padding: 32px 24px 24px;
+  }
+
+  footer .footer > div > .section:nth-child(4) {
+    justify-content: center;
   }
 }

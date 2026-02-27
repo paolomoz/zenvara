@@ -1,0 +1,75 @@
+VISUAL MEASUREMENT CHECKLIST FOR cards-teaser
+================================================
+Extracted from Figma node: 2216:36054
+Date: 2026-02-25
+
+LAYOUT & DIMENSIONS
+☑ Container width: 1440px (source: root instance width="1440")
+☑ Container max-width: 1180px (source: "Container Content" max-w-[1180px])
+☑ Container height: auto (source: h-fit on container content)
+☑ Container padding: top 40px right 0px bottom 40px left 0px (source: py-[40px] on Container)
+☑ Grid/Flex: flex-row flex-wrap (source: "Container Content" flex-row flex-wrap)
+☑ Grid gap: 10px (source: gap-[10px] on Container Content)
+☑ Column count: 4 (source: visual screenshot shows 4 cards per row)
+☑ Item width: flexible, min-width 248px (source: min-w-[248px] on Grid Item)
+☑ Item height: auto (source: h-fit on Grid Item)
+
+SPACING (EXACT PIXELS)
+☑ Section padding: 40px vertical (source: py-[40px] on Container)
+☑ Item internal padding: 24px all sides (source: p-[24px] on cmp-teaser__content)
+☑ Gap between items: 10px (source: gap-[10px])
+☑ Gap between text elements: 16px (source: gap-[16px] on cmp-teaser__content)
+☑ Image margin/padding: 0px (source: image fills top of card, no margin/padding classes)
+☑ Title internal gap: 8px (source: gap-[8px] on cmp-teaser__title)
+
+COLORS (EXACT HEX + OPACITY)
+☑ Container background: #ffffff (opacity: 100%) (source: var(--Background-Supporting-2,#ffffff))
+☑ Card background: #ebefee (opacity: 100%) (source: var(--Background-Supporting-1,#ebefee))
+☑ Title text color: #4f0031 (source: var(--Text-Title-2,#4f0031))
+☑ Body text color: #363b3b (source: var(--Text-Body-1,#363b3b))
+☑ Button background: #d0006f (source: bg-[#d0006f] on Backing / Primary)
+☑ Button text color: #ffffff (source: text-[#ffffff] on button label)
+☑ Button border color: #d0006f (opacity: 100%) (source: border-[#d0006f] on Backing / Primary)
+☑ Hover background: not specified (source: no hover state in Figma extraction)
+☑ Hover text color: not specified (source: no hover state in Figma extraction)
+
+TYPOGRAPHY (ALL PROPERTIES)
+☑ Heading font-family: Lexia (source: font-['Lexia',sans-serif] on title)
+☑ Heading font-size: 26px (source: text-[26px] on title)
+☑ Heading font-weight: 400 (source: font-normal on title, variable Weight|Style/400)
+☑ Heading line-height: 34px (source: leading-[34px] on title)
+☑ Heading letter-spacing: 0 (source: no letter-spacing class in extraction)
+☑ Heading text-transform: none (source: no text-transform class in extraction)
+☑ Heading font-style: normal (source: no italic class in extraction)
+☑ Body font-family: Inter (source: font-['Inter',sans-serif] on description)
+☑ Body font-size: 18px (source: text-[18px] on description)
+☑ Body font-weight: 400 (source: font-normal on description)
+☑ Body line-height: 28px (source: leading-[28px] on description)
+☑ Body letter-spacing: 0 (source: no letter-spacing class in extraction)
+☑ Body font-style: normal (source: no italic class in extraction)
+☑ Button font-family: Inter (source: font-['Inter',sans-serif] on button label)
+☑ Button font-size: 16px (source: text-[16px] on button label)
+☑ Button font-weight: 600 (source: font-semibold on button label)
+☑ Button line-height: 24px (source: leading-[24px] on button label)
+
+BORDERS & RADIUS
+☑ Card border width: 0px (source: no border classes on card/teaser component)
+☑ Card border style: none (source: no border styling on card)
+☑ Card border color: N/A (source: no border present on card)
+☑ Card border-radius: 8px (source: rounded-[8px] on Teaser component)
+☑ Button border width: 1px (source: border-[1px] on Backing / Primary)
+☑ Button border style: solid (source: border-solid on Backing / Primary)
+☑ Button border color: #d0006f (source: border-[#d0006f])
+☑ Button border-radius: 4px (source: rounded-[4px] on Backing / Primary)
+☑ Button min-height: 42px (source: min-h-[42px] on cmp-button)
+☑ Button padding: 8px vertical, 16px horizontal (source: px-[16px] py-[8px] on cmp-button)
+
+SHADOWS (EXACT VALUES)
+☑ Box-shadow: none (source: no shadow classes in Figma extraction)
+
+EFFECTS & TRANSITIONS
+☑ Hover transform: none specified (source: no hover state in Figma)
+☑ Transition duration: none specified (source: no transition in Figma)
+☑ Transition timing: none specified (source: no transition in Figma)
+☑ Opacity changes: none (source: no opacity changes in Figma)
+☑ Card overflow: hidden (source: overflow-hidden on card component)

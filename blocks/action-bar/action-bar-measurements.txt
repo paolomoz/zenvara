@@ -1,0 +1,76 @@
+VISUAL MEASUREMENT CHECKLIST FOR action-bar
+================================================
+Extracted from Figma node: 3970:58658
+Date: 2026-02-26
+
+LAYOUT & DIMENSIONS
+☑ Container width: 1180px (source: max-w-[1180px] in Tailwind output)
+☑ Container height: auto (80px total with padding) (source: h-fit in extraction)
+☑ Container padding: top 20px right 0px bottom 20px left 0px (source: py-[20px])
+☑ Grid/Flex gap: N/A - uses flex justify-between (source: flex-row justify-end)
+☑ Column count: 2 (text + actions) (source: visual structure)
+☑ Item width: text 1052px, actions 128px (source: w-[1052px], w-fit for actions)
+☑ Item height: text 28px, actions 40px (source: h-[28px], h-fit)
+☑ Section background style: light/white (source: no background classes)
+
+SPACING (EXACT PIXELS)
+☑ Section padding: 20px vertical (source: py-[20px])
+☑ Item internal padding: 0 (source: no padding on inner elements)
+☑ Gap between items: flex space-between (source: justify-end with fixed widths)
+☑ Margin between text elements: N/A (source: single text element)
+☑ Image margin/padding: N/A (source: no images)
+☑ Icon spacing: 4px gap between icons (source: gap-[4px] in Actions frame)
+
+COLORS (EXACT HEX + OPACITY)
+☑ Background color: transparent/white (opacity: 100%) (source: no bg class)
+☑ Primary text color: #363b3b (source: var(--Text-Body-1,#363b3b))
+☑ Secondary text color: N/A (source: single text style)
+☑ Accent/link color: #d0006f (source: Color/D0006F variable)
+☑ Border color: none (opacity: N/A) (source: no border classes)
+☑ Hover background: N/A (source: not in static extraction)
+☑ Hover text color: N/A (source: not in static extraction)
+☑ Overlay color: N/A (source: no overlay)
+☑ Icon color: #d0006f (source: Color/D0006F variable for brand accent)
+
+TYPOGRAPHY (ALL PROPERTIES)
+☑ Heading font-family: N/A (source: no headings in this block)
+☑ Heading font-size: N/A (source: no headings)
+☑ Heading font-weight: N/A (source: no headings)
+☑ Heading line-height: N/A (source: no headings)
+☑ Heading letter-spacing: N/A (source: no headings)
+☑ Heading text-transform: N/A (source: no headings)
+☑ Heading font-style: N/A (source: no headings)
+☑ Body font-family: Lexia (source: font-['Lexia',sans-serif])
+☑ Body font-size: 24px (source: text-[24px])
+☑ Body font-weight: 400 (source: font-normal / Weight | Style/400)
+☑ Body line-height: 28px (source: leading-[28px])
+☑ Body letter-spacing: 0 (source: no letter-spacing class)
+☑ Body font-style: normal (source: no italic styling)
+
+BORDERS & RADIUS
+☑ Border width: 0px (source: no border classes)
+☑ Border style: none (source: no border styling)
+☑ Border color: N/A (source: no border)
+☑ Border radius: 0px (source: no rounded classes)
+☑ Button style variant: icon-only (source: 40x40 icon buttons)
+
+SHADOWS (EXACT VALUES)
+☑ Box-shadow offset-x: 0 (source: no shadow classes)
+☑ Box-shadow offset-y: 0 (source: no shadow classes)
+☑ Box-shadow blur: 0 (source: no shadow classes)
+☑ Box-shadow spread: 0 (source: no shadow classes)
+☑ Box-shadow color: none (source: no shadow)
+
+EFFECTS & TRANSITIONS
+☑ Hover transform: none (source: not in static extraction)
+☑ Transition duration: 200ms (source: standard EDS pattern)
+☑ Transition timing: ease (source: standard EDS pattern)
+☑ Opacity changes: none (source: no opacity classes)
+☑ Overlay z-index layering: N/A (source: no overlay)
+☑ Carousel control presence: N/A (source: not a carousel)
+
+ICON DETAILS
+☑ Icon button size: 40x40px (source: w-[40px] h-[40px] on button instances)
+☑ Icon button gap: 4px (source: gap-[4px] in Actions frame)
+☑ Icon types: heart (like), bookmark (save), share (source: button names)
+☑ Icon color: #d0006f (source: brand accent color)

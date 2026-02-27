@@ -1,0 +1,38 @@
+{
+  "variantName": "carousel-teaser",
+  "baseBlock": "carousel-teaser",
+  "version": "1.0.0",
+  "created": "2026-02-26T09:20:00.441Z",
+  "sourceContext": {
+    "source": "figma",
+    "figmaFileKey": "kQplMQTStmD7cRMJiG4T6c",
+    "figmaNodeId": null,
+    "figmaNodeName": "carousel-teaser",
+    "figmaUrl": "https://www.figma.com/design/kQplMQTStmD7cRMJiG4T6c/One-AZ-3.1–Market-Master?node-id=2243-39201"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "balanced",
+    "purpose": "carousel",
+    "imagePattern": "large"
+  },
+  "contentPattern": {
+    "structure": "single visible slide with navigation controls",
+    "buttonCount": 0,
+    "imageCount": 1
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "carousel sections",
+      "light themes"
+    ],
+    "notSuitableFor": [
+      "text-only sections"
+    ]
+  },
+  "usage": {
+    "pagesUsing": [],
+    "reuseCount": 0,
+    "lastUsed": null
+  }
+}

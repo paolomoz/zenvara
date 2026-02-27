@@ -1,0 +1,33 @@
+{
+  "definitions": [],
+  "models": [
+    {
+      "id": "page-metadata",
+      "fields": [
+        {
+          "component": "text",
+          "name": "title",
+          "label": "Title"
+        },
+        {
+          "component": "text",
+          "name": "description",
+          "label": "Description"
+        },
+        {
+          "component": "reference",
+          "name": "image",
+          "label": "Image"
+        }
+      ]
+    }
+  ],
+  "filters": [
+    {
+      "id": "main",
+      "components": [
+        "section"
+      ]
+    }
+  ]
+}

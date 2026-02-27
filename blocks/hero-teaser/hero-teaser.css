@@ -1,0 +1,138 @@
+/* Import component-specific tokens */
+@import url('./hero-teaser-tokens.css');
+
+/* hero-teaser block styles */
+
+.hero-teaser-container .hero-teaser-wrapper {
+  max-width: unset;
+  padding: 0;
+}
+
+.hero-teaser {
+  position: relative;
+  padding: var(--hero-teaser-padding-top) var(--hero-teaser-padding-right) var(--hero-teaser-padding-bottom) var(--hero-teaser-padding-left);
+  min-height: var(--hero-teaser-min-height);
+  background-color: var(--hero-teaser-background);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero-teaser h1,
+.hero-teaser h2,
+.hero-teaser h3,
+.hero-teaser h4,
+.hero-teaser h5,
+.hero-teaser h6 {
+  font-family: var(--hero-teaser-heading-font-family);
+  font-size: var(--hero-teaser-heading-font-size);
+  font-weight: var(--hero-teaser-heading-font-weight);
+  font-style: var(--hero-teaser-heading-font-style);
+  line-height: var(--hero-teaser-heading-line-height);
+  letter-spacing: var(--hero-teaser-heading-letter-spacing);
+  text-transform: var(--hero-teaser-heading-text-transform);
+  color: var(--hero-teaser-heading-color);
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.hero-teaser p {
+  max-width: var(--hero-teaser-body-max-width);
+  font-family: var(--hero-teaser-body-font-family);
+  font-size: var(--hero-teaser-body-font-size);
+  font-weight: var(--hero-teaser-body-font-weight);
+  font-style: var(--hero-teaser-body-font-style);
+  line-height: var(--hero-teaser-body-line-height);
+  letter-spacing: var(--hero-teaser-body-letter-spacing);
+  color: var(--hero-teaser-body-color);
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.hero-teaser > div:last-child {
+  max-width: var(--hero-teaser-max-width);
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: var(--hero-teaser-content-gap);
+  z-index: 1;
+}
+
+.hero-teaser > div:last-child > div {
+  display: flex;
+  flex-direction: column;
+  gap: var(--hero-teaser-content-gap);
+}
+
+.hero-teaser.no-image h1,
+.hero-teaser.no-image h2,
+.hero-teaser.no-image h3,
+.hero-teaser.no-image h4,
+.hero-teaser.no-image h5,
+.hero-teaser.no-image h6,
+.hero-teaser.no-image p {
+  color: var(--text-color);
+}
+
+/* Background image */
+.hero-teaser picture {
+  position: absolute;
+  z-index: 0;
+  inset: 0;
+  object-fit: cover;
+  box-sizing: border-box;
+}
+
+.hero-teaser img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  opacity: var(--hero-teaser-image-opacity);
+}
+
+/* Button styling */
+.hero-teaser p.button-wrapper {
+  margin: 0;
+  max-width: unset;
+}
+
+.hero-teaser a.button:any-link,
+.hero-teaser button.button {
+  font-family: var(--hero-teaser-button-font-family);
+  font-size: var(--hero-teaser-button-font-size);
+  font-weight: var(--hero-teaser-button-font-weight);
+  font-style: var(--hero-teaser-button-font-style);
+  line-height: var(--hero-teaser-button-line-height);
+  letter-spacing: var(--hero-teaser-button-letter-spacing);
+  text-transform: var(--hero-teaser-button-text-transform);
+  color: var(--hero-teaser-button-color);
+  background-color: var(--hero-teaser-button-background);
+  border: var(--hero-teaser-button-border-width) var(--hero-teaser-button-border-style) var(--hero-teaser-button-border-color);
+  border-radius: var(--hero-teaser-button-border-radius);
+  padding: var(--hero-teaser-button-padding-y) var(--hero-teaser-button-padding-x);
+  min-height: var(--hero-teaser-button-min-height);
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-teaser a.button:hover,
+.hero-teaser a.button:focus-visible,
+.hero-teaser button.button:hover,
+.hero-teaser button.button:focus-visible {
+  background-color: var(--hero-teaser-button-hover-background);
+  border-color: var(--hero-teaser-button-hover-border-color);
+  color: var(--hero-teaser-button-color);
+}
+
+/* Mobile adjustments */
+@media (width >= 900px) {
+  .hero-teaser {
+    padding: var(--hero-teaser-padding-top) 32px var(--hero-teaser-padding-bottom) 32px;
+  }
+}

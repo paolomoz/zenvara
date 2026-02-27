@@ -1,0 +1,67 @@
+VISUAL MEASUREMENT CHECKLIST FOR hero-teaser
+================================================
+Extracted from Figma node: 2226:7289
+Date: 2026-02-25
+
+LAYOUT & DIMENSIONS
+☑ Container width: 1440px (source: instance width="1440")
+☑ Container height: 560px (source: instance height="560")
+☑ Content max-width: 1180px (source: Container Content width="1180", variable site-max-width=1180)
+☑ Content min-height: 480px (source: min-h-[480px] on Teaser: Home Hero)
+☑ Container padding: top 40px right 20px bottom 40px left 20px (source: px-[20px] py-[40px] on cmp-teaser__content)
+☑ Content gap: 16px (source: gap-[16px] on cmp-teaser__content)
+☑ Column count: 1 (source: single column layout, flex-col)
+
+SPACING (EXACT PIXELS)
+☑ Section padding: 0px (source: full-bleed hero, no section padding)
+☑ Content internal padding: 40px 20px 40px 20px (source: py-[40px] px-[20px])
+☑ Gap between text elements: 16px (source: gap-[16px])
+☑ Description max-width: 577px (source: max-w-[577px] on cmp-teaser__description)
+
+COLORS (EXACT HEX + OPACITY)
+☑ Background color: #000000 (opacity: 100%) (source: bg-[#000000] on Teaser: Home Hero)
+☑ Image opacity: 0.75 (source: style opacity="0.75" on Teaser Image)
+☑ Primary text color: #ffffff (source: text-[color:var(--Text-Body-2,#ffffff)])
+☑ Heading text color: #ffffff (source: text-[color:var(--Text-Body-2,#ffffff)])
+☑ Description text color: #ffffff (source: text-[color:var(--Text-Body-2,#ffffff)])
+☑ Button text color: #ffffff (source: text-[#ffffff] bg-[#ffffff] on button label)
+☑ Button background: #d0006f (source: bg-[#d0006f] on Backing / Primary, variable Color/D0006F)
+☑ Button border color: #d0006f (source: border-[#d0006f] on Backing / Primary)
+☑ Hover background: N/A (source: no hover state in Figma extraction)
+☑ Hover text color: N/A (source: no hover state in Figma extraction)
+
+TYPOGRAPHY (ALL PROPERTIES)
+☑ Heading font-family: Lexia (source: font-['Lexia',sans-serif], variable Font-Family/Lexia)
+☑ Heading font-size: 56px (source: text-[56px], variable Tokens/Font Size/56)
+☑ Heading font-weight: 400 (source: font-normal, variable Weight | Style/400)
+☑ Heading line-height: 60px (source: leading-[60px], variable Tokens/Line Height/60)
+☑ Heading letter-spacing: 0 (source: no letter-spacing in extraction)
+☑ Heading text-transform: none (source: no text-transform in extraction)
+☑ Heading font-style: normal (source: font-normal)
+☑ Body font-family: Inter (source: font-['Inter',sans-serif], variable Font-Family/Inter)
+☑ Body font-size: 18px (source: text-[18px], variable Tokens/Font Size/18)
+☑ Body font-weight: 400 (source: font-normal, variable Weight | Style/400)
+☑ Body line-height: 28px (source: leading-[28px], variable Tokens/Line Height/28)
+☑ Body letter-spacing: 0 (source: no letter-spacing in extraction)
+☑ Body font-style: normal (source: font-normal)
+
+BORDERS & RADIUS
+☑ Container border width: 0px (source: no border classes on container)
+☑ Container border style: none (source: no border present)
+☑ Container border color: N/A (source: no border present)
+☑ Container border radius: 0px (source: no rounded classes)
+☑ Button border width: 1px (source: border-[1px] on Backing / Primary)
+☑ Button border style: solid (source: border-solid on Backing / Primary)
+☑ Button border color: #d0006f (source: border-[#d0006f])
+☑ Button border radius: 4px (source: rounded-[4px] on Backing / Primary)
+☑ Button padding: 8px 16px (source: px-[16px] py-[8px] on cmp-button)
+☑ Button min-height: 42px (source: min-h-[42px] on cmp-button)
+
+SHADOWS (EXACT VALUES)
+☑ Box-shadow: none (source: no shadow classes in extraction)
+
+EFFECTS & TRANSITIONS
+☑ Hover transform: none (source: no hover state in Figma extraction)
+☑ Transition duration: N/A (source: no transition in Figma)
+☑ Transition timing: N/A (source: no transition in Figma)
+☑ Image opacity: 0.75 (source: style opacity="0.75" on Teaser Image)

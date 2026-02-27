@@ -1,0 +1,100 @@
+/* Import component-specific tokens */
+@import './action-bar-tokens.css';
+
+/* Action Bar block styles */
+.action-bar {
+  display: var(--action-bar-display);
+  justify-content: var(--action-bar-justify);
+  align-items: var(--action-bar-align);
+  max-width: var(--action-bar-max-width);
+  margin: 0 auto;
+  padding: var(--action-bar-padding-top) var(--action-bar-padding-right) var(--action-bar-padding-bottom) var(--action-bar-padding-left);
+  background: var(--action-bar-background);
+}
+
+.action-bar .action-bar-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.action-bar .action-bar-meta {
+  font-family: var(--action-bar-text-font-family);
+  font-size: var(--action-bar-text-font-size);
+  font-weight: var(--action-bar-text-font-weight);
+  font-style: var(--action-bar-text-font-style);
+  line-height: var(--action-bar-text-line-height);
+  letter-spacing: var(--action-bar-text-letter-spacing);
+  color: var(--action-bar-text-color);
+}
+
+.action-bar .action-bar-actions {
+  display: flex;
+  align-items: center;
+  gap: var(--action-bar-icon-gap);
+}
+
+.action-bar .action-bar-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--action-bar-icon-size);
+  height: var(--action-bar-icon-size);
+  padding: 0;
+  border: none;
+  background: var(--action-bar-icon-background);
+  border-radius: var(--action-bar-icon-border-radius);
+  cursor: pointer;
+  transition: background var(--action-bar-transition-duration) var(--action-bar-transition-timing),
+              color var(--action-bar-transition-duration) var(--action-bar-transition-timing);
+}
+
+.action-bar .action-bar-button:hover {
+  background: var(--action-bar-icon-hover-background);
+}
+
+.action-bar .action-bar-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--action-bar-icon-color);
+}
+
+.action-bar .action-bar-button:hover .action-bar-icon {
+  color: var(--action-bar-icon-hover-color);
+}
+
+.action-bar .action-bar-icon svg {
+  width: 24px;
+  height: 24px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+  .action-bar .action-bar-meta {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+@media (max-width: 600px) {
+  .action-bar {
+    padding: 16px 0;
+  }
+
+  .action-bar .action-bar-meta {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .action-bar .action-bar-button {
+    width: 36px;
+    height: 36px;
+  }
+
+  .action-bar .action-bar-icon svg {
+    width: 20px;
+    height: 20px;
+  }
+}

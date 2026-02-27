@@ -1,0 +1,26 @@
+/* Import component-specific tokens */
+@import url('./image-tokens.css');
+
+/* Image block styles */
+
+.image {
+  max-width: var(--image-max-width);
+  margin: var(--image-margin);
+  padding: var(--image-padding);
+  background: var(--image-background);
+}
+
+.image picture {
+  display: block;
+  width: 100%;
+  aspect-ratio: var(--image-aspect-ratio);
+  border-radius: var(--image-border-radius);
+  overflow: hidden;
+}
+
+.image img {
+  width: 100%;
+  height: 100%;
+  object-fit: var(--image-object-fit);
+  object-position: var(--image-object-position);
+}

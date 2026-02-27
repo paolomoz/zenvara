@@ -1,0 +1,22 @@
+/* blocks/image/image-tokens.css */
+
+/* All values extracted from Figma Image Component */
+
+.image {
+  /* ===== LAYOUT & DIMENSIONS ===== */
+  --image-max-width: 1180px;
+  --image-margin: 0 auto;
+  --image-padding: 20px 0;
+  --image-gap: 8px;
+
+  /* ===== ASPECT RATIO ===== */
+  --image-aspect-ratio: 16 / 9;
+
+  /* ===== CONTAINER ===== */
+  --image-background: #fff;
+  --image-border-radius: 0;
+
+  /* ===== IMAGE STYLING ===== */
+  --image-object-fit: cover;
+  --image-object-position: center;
+}

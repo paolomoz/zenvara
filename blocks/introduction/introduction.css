@@ -1,0 +1,54 @@
+/* Import component-specific tokens */
+@import url('./introduction-tokens.css');
+
+/* introduction block styles */
+.introduction {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background: var(--introduction-background);
+  border-width: var(--introduction-border-width);
+  border-style: var(--introduction-border-style);
+  border-radius: var(--introduction-border-radius);
+  box-shadow: var(--introduction-box-shadow);
+}
+
+.introduction > div {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: var(--introduction-max-width);
+}
+
+.introduction h1,
+.introduction h2,
+.introduction h3,
+.introduction h4,
+.introduction h5,
+.introduction h6 {
+  font-family: var(--introduction-heading-font-family);
+  font-size: var(--introduction-heading-font-size);
+  font-weight: var(--introduction-heading-font-weight);
+  font-style: var(--introduction-heading-font-style);
+  line-height: var(--introduction-heading-line-height);
+  letter-spacing: var(--introduction-heading-letter-spacing);
+  text-transform: var(--introduction-heading-text-transform);
+  color: var(--introduction-heading-color);
+  margin: 0;
+  padding-top: var(--introduction-title-padding-top);
+  padding-bottom: var(--introduction-title-padding-bottom);
+}
+
+.introduction p {
+  font-family: var(--introduction-body-font-family);
+  font-size: var(--introduction-body-font-size);
+  font-weight: var(--introduction-body-font-weight);
+  font-style: var(--introduction-body-font-style);
+  line-height: var(--introduction-body-line-height);
+  letter-spacing: var(--introduction-body-letter-spacing);
+  color: var(--introduction-body-color);
+  margin: 0;
+  padding-top: var(--introduction-body-padding-top);
+  padding-bottom: var(--introduction-body-padding-bottom);
+}

@@ -1,0 +1,116 @@
+/* Import component-specific tokens */
+@import url('./cards-teaser-tokens.css');
+
+/* cards-teaser block styles */
+
+/* Section container - full width background */
+main > .section.cards-teaser-container {
+  background-color: var(--cards-teaser-background);
+  margin: 0;
+  padding: var(--cards-teaser-padding-top) 0 var(--cards-teaser-padding-bottom);
+}
+
+/* Section wrapper styling */
+main > .section > .cards-teaser-wrapper {
+  max-width: var(--cards-teaser-max-width);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.cards-teaser > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(var(--cards-teaser-columns-min), 1fr));
+  gap: var(--cards-teaser-gap);
+}
+
+.cards-teaser > ul > li {
+  background-color: var(--cards-teaser-card-background);
+  border-width: var(--cards-teaser-card-border-width);
+  border-style: var(--cards-teaser-card-border-style);
+  border-color: var(--cards-teaser-card-border-color);
+  border-radius: var(--cards-teaser-card-border-radius);
+  overflow: var(--cards-teaser-card-overflow);
+  display: flex;
+  flex-direction: column;
+}
+
+.cards-teaser .cards-teaser-card-image {
+  line-height: 0;
+}
+
+.cards-teaser > ul > li img {
+  width: 100%;
+  aspect-ratio: var(--cards-teaser-image-aspect-ratio);
+  object-fit: cover;
+  object-position: center top;
+}
+
+.cards-teaser .cards-teaser-card-body {
+  padding: var(--cards-teaser-content-padding);
+  display: flex;
+  flex-direction: column;
+  gap: var(--cards-teaser-content-gap);
+  flex-grow: 1;
+}
+
+.cards-teaser .cards-teaser-card-body > p:first-child,
+.cards-teaser .cards-teaser-card-body > p:first-child strong {
+  font-family: var(--cards-teaser-heading-font-family);
+  font-size: var(--cards-teaser-heading-font-size);
+  font-weight: var(--cards-teaser-heading-font-weight);
+  font-style: var(--cards-teaser-heading-font-style);
+  line-height: var(--cards-teaser-heading-line-height);
+  letter-spacing: var(--cards-teaser-heading-letter-spacing);
+  text-transform: var(--cards-teaser-heading-text-transform);
+  color: var(--cards-teaser-heading-color);
+  margin: 0;
+}
+
+.cards-teaser .cards-teaser-card-body > p:not(:first-child, .button-wrapper) {
+  font-family: var(--cards-teaser-body-font-family);
+  font-size: var(--cards-teaser-body-font-size);
+  font-weight: var(--cards-teaser-body-font-weight);
+  font-style: var(--cards-teaser-body-font-style);
+  line-height: var(--cards-teaser-body-line-height);
+  letter-spacing: var(--cards-teaser-body-letter-spacing);
+  color: var(--cards-teaser-body-color);
+  margin: 0;
+}
+
+.cards-teaser .cards-teaser-card-body .button-wrapper {
+  margin-top: auto;
+  margin-bottom: 0;
+}
+
+.cards-teaser .cards-teaser-card-body a.button {
+  font-family: var(--cards-teaser-button-font-family);
+  font-size: var(--cards-teaser-button-font-size);
+  font-weight: var(--cards-teaser-button-font-weight);
+  font-style: var(--cards-teaser-button-font-style);
+  line-height: var(--cards-teaser-button-line-height);
+  letter-spacing: var(--cards-teaser-button-letter-spacing);
+  text-transform: var(--cards-teaser-button-text-transform);
+  color: var(--cards-teaser-button-color);
+  background-color: var(--cards-teaser-button-background);
+  border-radius: var(--cards-teaser-button-border-radius);
+  border-width: var(--cards-teaser-button-border-width);
+  border-style: var(--cards-teaser-button-border-style);
+  border-color: var(--cards-teaser-button-border-color);
+  padding: var(--cards-teaser-button-padding-y) var(--cards-teaser-button-padding-x);
+  min-height: var(--cards-teaser-button-min-height);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color var(--cards-teaser-transition-duration) var(--cards-teaser-transition-timing),
+    border-color var(--cards-teaser-transition-duration) var(--cards-teaser-transition-timing);
+}
+
+.cards-teaser .cards-teaser-card-body a.button:hover {
+  background-color: var(--cards-teaser-button-hover-background);
+  border-color: var(--cards-teaser-button-hover-border-color);
+}

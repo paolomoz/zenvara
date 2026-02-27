@@ -1,0 +1,41 @@
+{
+  "variantName": "image",
+  "baseBlock": "image",
+  "version": "1.0.0",
+  "created": "2026-02-26T10:07:00.000Z",
+  "sourceContext": {
+    "source": "figma",
+    "figmaFileKey": "kQplMQTStmD7cRMJiG4T6c",
+    "figmaNodeId": "2243:39205",
+    "figmaNodeName": "Image Component",
+    "figmaUrl": "https://www.figma.com/design/kQplMQTStmD7cRMJiG4T6c/One-AZ-3.1–Market-Master?node-id=2243-39205"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "neutral",
+    "density": "standard",
+    "purpose": "media-display",
+    "imagePattern": "single-image"
+  },
+  "contentPattern": {
+    "structure": "single image with 16:9 aspect ratio",
+    "buttonCount": 0,
+    "imageCount": 1
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "standalone images",
+      "featured images",
+      "banner images"
+    ],
+    "notSuitableFor": [
+      "image galleries",
+      "thumbnails",
+      "icons"
+    ]
+  },
+  "usage": {
+    "pagesUsing": [],
+    "reuseCount": 0,
+    "lastUsed": null
+  }
+}

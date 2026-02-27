@@ -1,0 +1,35 @@
+/* Table Data Component Tokens - Extracted from Figma */
+/* Source: One-AZ-3.1 Market Master - Node 3446:31596 */
+
+:root {
+  /* Table Data - Header Colors */
+  --table-data-header-bg: #d8dfde;
+  --table-data-header-accent-bg: #f6cee7;
+
+  /* Table Data - Row Colors */
+  --table-data-row-even-bg: #ffffff;
+  --table-data-row-odd-bg: #ebefee;
+  --table-data-row-accent-bg: #f6cee7;
+
+  /* Table Data - Border */
+  --table-data-border-color: #b1b9b9;
+  --table-data-border-width: 1px;
+
+  /* Table Data - Typography - Header */
+  --table-data-header-font-family: 'Lexia VF', serif;
+  --table-data-header-font-size: 14px;
+  --table-data-header-line-height: 18px;
+  --table-data-header-font-weight: 400;
+
+  /* Table Data - Typography - Row Cells */
+  --table-data-cell-font-family: 'Inter', sans-serif;
+  --table-data-cell-font-size: 12px;
+  --table-data-cell-line-height: 18px;
+  --table-data-cell-font-weight: 400;
+
+  /* Table Data - Text Color */
+  --table-data-text-color: #363b3b;
+
+  /* Table Data - Spacing */
+  --table-data-cell-padding: 16px;
+}

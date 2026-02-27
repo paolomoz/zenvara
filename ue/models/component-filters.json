@@ -1,0 +1,11 @@
+[
+  {
+    "...": "./page.json#/filters"
+  },
+  {
+    "...": "./section.json#/filters"
+  },
+  {
+    "...": "./blocks/*.json#/filters"
+  }
+]

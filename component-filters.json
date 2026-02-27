@@ -1,0 +1,29 @@
+[
+  {
+    "id": "main",
+    "components": [
+      "section"
+    ]
+  },
+  {
+    "id": "section",
+    "components": [
+      "text",
+      "image",
+      "title",
+      "introduction",
+      "hero",
+      "cards",
+      "cards-teaser",
+      "columns",
+      "columns-teaser",
+      "introduction"
+    ]
+  },
+  {
+    "id": "cards-teaser",
+    "components": [
+      "card-teaser"
+    ]
+  }
+]

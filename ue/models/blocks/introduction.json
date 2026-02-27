@@ -1,0 +1,29 @@
+{
+  "definitions": [
+    {
+      "title": "Introduction",
+      "id": "introduction",
+      "model": "introduction",
+      "filter": "introduction",
+      "plugins": {
+        "da": {
+          "name": "introduction"
+        }
+      }
+    }
+  ],
+  "models": [
+    {
+      "id": "introduction",
+      "fields": [
+        {
+          "component": "richtext",
+          "name": "content",
+          "label": "Content",
+          "valueType": "string"
+        }
+      ]
+    }
+  ],
+  "filters": []
+}

@@ -1,0 +1,29 @@
+{
+  "definitions": [
+    {
+      "title": "Title",
+      "id": "title",
+      "model": "title",
+      "filter": "title",
+      "plugins": {
+        "da": {
+          "name": "title"
+        }
+      }
+    }
+  ],
+  "models": [
+    {
+      "id": "title",
+      "fields": [
+        {
+          "component": "richtext",
+          "name": "content",
+          "label": "Content",
+          "valueType": "string"
+        }
+      ]
+    }
+  ],
+  "filters": []
+}

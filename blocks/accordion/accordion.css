@@ -1,0 +1,91 @@
+/* Import component-specific tokens */
+@import url('./accordion-tokens.css');
+
+/* Accordion block styles */
+
+.accordion {
+  max-width: var(--accordion-max-width);
+  margin: 0 auto;
+  background: var(--accordion-background);
+}
+
+.accordion details {
+  border: var(--accordion-border-width) var(--accordion-border-style) var(--accordion-border-color);
+}
+
+.accordion details + details {
+  margin-top: var(--accordion-item-spacing);
+  border-top: none;
+}
+
+.accordion details summary {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--accordion-gap);
+  padding: var(--accordion-header-padding-top) var(--accordion-header-padding-x) var(--accordion-header-padding-bottom);
+  background: var(--accordion-header-background);
+  cursor: pointer;
+  list-style: none;
+  transition: background-color var(--accordion-transition-duration) var(--accordion-transition-timing);
+}
+
+.accordion details summary::-webkit-details-marker {
+  display: none;
+}
+
+.accordion details summary:hover,
+.accordion details summary:focus {
+  background: var(--accordion-header-hover-background);
+}
+
+.accordion details[open] summary {
+  background: var(--accordion-header-hover-background);
+}
+
+/* Title styling */
+.accordion details summary > * {
+  font-family: var(--accordion-title-font-family);
+  font-size: var(--accordion-title-font-size);
+  font-weight: var(--accordion-title-font-weight);
+  line-height: var(--accordion-title-line-height);
+  color: var(--accordion-title-color);
+  margin: 0;
+}
+
+/* Chevron icon */
+.accordion details summary::after {
+  content: '';
+  flex-shrink: 0;
+  width: var(--accordion-icon-size);
+  height: var(--accordion-icon-size);
+  border: var(--accordion-icon-border-width) solid var(--accordion-icon-color);
+  border-width: var(--accordion-icon-border-width) var(--accordion-icon-border-width) 0 0;
+  transform: rotate(135deg);
+  transition: transform var(--accordion-transition-duration) var(--accordion-transition-timing);
+}
+
+.accordion details[open] summary::after {
+  transform: rotate(-45deg);
+}
+
+/* Body styling */
+.accordion details .accordion-item-body {
+  padding: var(--accordion-body-padding-y) var(--accordion-body-padding-x);
+  background: var(--accordion-body-background);
+  border-top: var(--accordion-border-width) var(--accordion-border-style) var(--accordion-border-color);
+}
+
+.accordion details .accordion-item-body p {
+  font-family: var(--accordion-body-font-family);
+  font-size: var(--accordion-body-font-size);
+  font-weight: var(--accordion-body-font-weight);
+  line-height: var(--accordion-body-line-height);
+  color: var(--accordion-body-color);
+  margin: 0 0 0.8em;
+}
+
+.accordion details .accordion-item-body p:last-child {
+  margin-bottom: 0;
+}

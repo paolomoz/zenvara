@@ -1,0 +1,38 @@
+{
+  "variantName": "introduction",
+  "baseBlock": "introduction",
+  "version": "1.0.0",
+  "created": "2026-02-26T09:28:27.012Z",
+  "sourceContext": {
+    "source": "figma",
+    "figmaFileKey": "kQplMQTStmD7cRMJiG4T6c",
+    "figmaNodeId": null,
+    "figmaNodeName": "introduction",
+    "figmaUrl": "https://www.figma.com/design/kQplMQTStmD7cRMJiG4T6c/One-AZ-3.1–Market-Master?node-id=3970-58655"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "balanced",
+    "purpose": "text",
+    "imagePattern": "mixed"
+  },
+  "contentPattern": {
+    "structure": "section heading + body text",
+    "buttonCount": 0,
+    "imageCount": 1
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "text sections",
+      "light themes"
+    ],
+    "notSuitableFor": [
+      "text-only sections"
+    ]
+  },
+  "usage": {
+    "pagesUsing": [],
+    "reuseCount": 0,
+    "lastUsed": null
+  }
+}

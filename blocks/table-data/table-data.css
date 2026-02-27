@@ -1,0 +1,111 @@
+/* Table Data Block - Styled Data Table */
+/* Design Source: Figma One-AZ-3.1 Market Master - Node 3446:31596 */
+
+/* Component Tokens */
+.table-data.block {
+  /* Header Colors */
+  --table-data-header-bg: #d8dfde;
+  --table-data-header-accent-bg: #f6cee7;
+
+  /* Row Colors */
+  --table-data-row-even-bg: #ffffff;
+  --table-data-row-odd-bg: #ebefee;
+  --table-data-row-accent-bg: #f6cee7;
+
+  /* Border */
+  --table-data-border-color: #b1b9b9;
+  --table-data-border-width: 1px;
+
+  /* Typography - Header */
+  --table-data-header-font-size: 14px;
+  --table-data-header-line-height: 18px;
+
+  /* Typography - Row Cells */
+  --table-data-cell-font-size: 12px;
+  --table-data-cell-line-height: 18px;
+
+  /* Text Color */
+  --table-data-text-color: #363b3b;
+
+  /* Spacing */
+  --table-data-cell-padding: 16px;
+
+  /* Block Styles */
+  width: 100%;
+  overflow-x: auto;
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.table-data.block table {
+  width: 100%;
+  max-width: 100%;
+  border-collapse: collapse;
+}
+
+/* Header Styling */
+.table-data.block table thead tr {
+  background-color: var(--table-data-header-bg);
+}
+
+.table-data.block table th {
+  font-size: var(--table-data-header-font-size);
+  line-height: var(--table-data-header-line-height);
+  font-weight: 400;
+  color: var(--table-data-text-color);
+  padding: var(--table-data-cell-padding);
+  text-align: left;
+  border: var(--table-data-border-width) solid var(--table-data-border-color);
+  background-color: var(--table-data-header-bg);
+}
+
+/* Accent header cells (pink) */
+.table-data.block table th.accent,
+.table-data.block table th[data-accent="true"] {
+  background-color: var(--table-data-header-accent-bg);
+}
+
+/* Row Cell Styling */
+.table-data.block table td {
+  font-size: var(--table-data-cell-font-size);
+  line-height: var(--table-data-cell-line-height);
+  font-weight: 400;
+  color: var(--table-data-text-color);
+  padding: var(--table-data-cell-padding);
+  text-align: left;
+  border: var(--table-data-border-width) solid var(--table-data-border-color);
+}
+
+/* Alternating row backgrounds */
+.table-data.block table tbody tr:nth-child(odd) {
+  background-color: var(--table-data-row-even-bg);
+}
+
+.table-data.block table tbody tr:nth-child(even) {
+  background-color: var(--table-data-row-odd-bg);
+}
+
+/* Accent cells in data rows (pink highlight) */
+.table-data.block table td.accent,
+.table-data.block table td[data-accent="true"] {
+  background-color: var(--table-data-row-accent-bg);
+}
+
+/* Remove default margins on paragraphs inside cells */
+.table-data.block table th p,
+.table-data.block table td p {
+  margin: 0;
+}
+
+.table-data.block table td p + p {
+  margin-top: 0.25em;
+}
+
+/* Responsive adjustments */
+@media (max-width: 599px) {
+  .table-data.block table th,
+  .table-data.block table td {
+    padding: calc(var(--table-data-cell-padding) / 2);
+    font-size: 11px;
+  }
+}

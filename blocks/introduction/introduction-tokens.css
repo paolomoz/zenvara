@@ -1,0 +1,48 @@
+/* blocks/introduction/introduction-tokens.css */
+
+/* All values extracted from introduction-measurements.txt */
+
+.introduction {
+  /* ===== LAYOUT & DIMENSIONS ===== */
+  --introduction-max-width: 1180px;
+  --introduction-padding-top: 0;
+  --introduction-padding-right: 0;
+  --introduction-padding-bottom: 0;
+  --introduction-padding-left: 0;
+
+  /* ===== CONTAINER COLORS ===== */
+  --introduction-background: transparent;
+
+  /* ===== SPACING ===== */
+  --introduction-title-padding-top: 20px;
+  --introduction-title-padding-bottom: 0;
+  --introduction-body-padding-top: 16px;
+  --introduction-body-padding-bottom: 16px;
+
+  /* ===== TYPOGRAPHY - HEADINGS ===== */
+  --introduction-heading-font-family: "Lexia VF", sans-serif;
+  --introduction-heading-font-size: 46px;
+  --introduction-heading-font-weight: 400;
+  --introduction-heading-font-style: normal;
+  --introduction-heading-line-height: 50px;
+  --introduction-heading-letter-spacing: normal;
+  --introduction-heading-text-transform: none;
+  --introduction-heading-color: #830051;
+
+  /* ===== TYPOGRAPHY - BODY ===== */
+  --introduction-body-font-family: "Inter", sans-serif;
+  --introduction-body-font-size: 16px;
+  --introduction-body-font-weight: 400;
+  --introduction-body-font-style: normal;
+  --introduction-body-line-height: 24px;
+  --introduction-body-letter-spacing: normal;
+  --introduction-body-color: #363b3b;
+
+  /* ===== BORDERS & RADIUS ===== */
+  --introduction-border-width: 0;
+  --introduction-border-style: none;
+  --introduction-border-radius: 0;
+
+  /* ===== SHADOWS ===== */
+  --introduction-box-shadow: none;
+}

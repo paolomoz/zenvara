@@ -36,6 +36,9 @@
   --heading-font-size-s: 24px;
   --heading-font-size-xs: 22px;
 
+  /* layout */
+  --max-width-site: 1200px;
+
   /* nav height */
   --nav-height: 64px;
 }
@@ -301,7 +304,7 @@ main > .section {
 }
 
 main > .section > div {
-  max-width: 1200px;
+  max-width: var(--max-width-site);
   margin: auto;
   padding: 0 24px;
 }
@@ -322,4 +325,26 @@ main .section.highlight {
   background-color: var(--light-color);
   margin: 0;
   padding: 40px 0;
+}
+
+main .section.dark {
+  background-color: #2e3232;
+  color: #fff;
+  margin: 0;
+  padding: 40px 0;
+}
+
+main .section.dark h1,
+main .section.dark h2,
+main .section.dark h3,
+main .section.dark h4,
+main .section.dark h5,
+main .section.dark h6,
+main .section.dark p {
+  color: #fff;
+}
+
+/* hide metadata block */
+main .metadata {
+  display: none;
 }

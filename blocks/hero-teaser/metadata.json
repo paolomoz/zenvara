@@ -1,0 +1,38 @@
+{
+  "variantName": "hero-teaser",
+  "baseBlock": "hero",
+  "version": "1.0.0",
+  "created": "2026-02-26T09:20:00.457Z",
+  "sourceContext": {
+    "source": "figma",
+    "figmaFileKey": "kQplMQTStmD7cRMJiG4T6c",
+    "figmaNodeId": null,
+    "figmaNodeName": "hero-teaser",
+    "figmaUrl": "https://www.figma.com/design/kQplMQTStmD7cRMJiG4T6c/One-AZ-3.1–Market-Master?node-id=2243-39201"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "balanced",
+    "purpose": "hero",
+    "imagePattern": "large"
+  },
+  "contentPattern": {
+    "structure": "heading + body + cta + media",
+    "buttonCount": 0,
+    "imageCount": 1
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "hero sections",
+      "light themes"
+    ],
+    "notSuitableFor": [
+      "text-only sections"
+    ]
+  },
+  "usage": {
+    "pagesUsing": [],
+    "reuseCount": 0,
+    "lastUsed": null
+  }
+}

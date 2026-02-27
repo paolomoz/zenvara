@@ -8,7 +8,6 @@ function closeOnEscape(e) {
   if (e.code === 'Escape') {
     const nav = document.getElementById('nav');
     const navSections = nav.querySelector('.nav-sections');
-    if (!navSections) return;
     const navSectionExpanded = navSections.querySelector('[aria-expanded="true"]');
     if (navSectionExpanded && isDesktop.matches) {
       // eslint-disable-next-line no-use-before-define
@@ -26,7 +25,6 @@ function closeOnFocusLost(e) {
   const nav = e.currentTarget;
   if (!nav.contains(e.relatedTarget)) {
     const navSections = nav.querySelector('.nav-sections');
-    if (!navSections) return;
     const navSectionExpanded = navSections.querySelector('[aria-expanded="true"]');
     if (navSectionExpanded && isDesktop.matches) {
       // eslint-disable-next-line no-use-before-define
@@ -59,10 +57,23 @@ function focusNavSection() {
  * @param {Boolean} expanded Whether the element should be expanded or collapsed
  */
 function toggleAllNavSections(sections, expanded = false) {
-  if (!sections) return;
   sections.querySelectorAll('.nav-sections .default-content-wrapper > ul > li').forEach((section) => {
     section.setAttribute('aria-expanded', expanded);
   });
+}
+
+/**
+ * Processes sections with metadata to organize them by placement
+ * @param {Element} nav The nav element containing all sections
+ * @returns {Object} Object with topSections, mainSections, and bottomSections arrays
+ */
+function processSectionsWithMetadata(nav) {
+  return Array.from(nav.children).reduce((acc, section) => {
+    const placement = ['top', 'bottom'].find((pos) => section.classList.contains(pos)) || 'main';
+
+    acc[`${placement}Sections`].push(section);
+    return acc;
+  }, { topSections: [], mainSections: [], bottomSections: [] });
 }
 
 /**
@@ -79,21 +90,19 @@ function toggleMenu(nav, navSections, forceExpanded = null) {
   toggleAllNavSections(navSections, expanded || isDesktop.matches ? 'false' : 'true');
   button.setAttribute('aria-label', expanded ? 'Open navigation' : 'Close navigation');
   // enable nav dropdown keyboard accessibility
-  if (navSections) {
-    const navDrops = navSections.querySelectorAll('.nav-drop');
-    if (isDesktop.matches) {
-      navDrops.forEach((drop) => {
-        if (!drop.hasAttribute('tabindex')) {
-          drop.setAttribute('tabindex', 0);
-          drop.addEventListener('focus', focusNavSection);
-        }
-      });
-    } else {
-      navDrops.forEach((drop) => {
-        drop.removeAttribute('tabindex');
-        drop.removeEventListener('focus', focusNavSection);
-      });
-    }
+  const navDrops = navSections.querySelectorAll('.nav-drop');
+  if (isDesktop.matches) {
+    navDrops.forEach((drop) => {
+      if (!drop.hasAttribute('tabindex')) {
+        drop.setAttribute('tabindex', 0);
+        drop.addEventListener('focus', focusNavSection);
+      }
+    });
+  } else {
+    navDrops.forEach((drop) => {
+      drop.removeAttribute('tabindex');
+      drop.removeEventListener('focus', focusNavSection);
+    });
   }
 
   // enable menu collapse on escape keypress
@@ -118,17 +127,41 @@ export default async function decorate(block) {
   const navPath = navMeta ? new URL(navMeta, window.location).pathname : '/nav';
   const fragment = await loadFragment(navPath);
 
+  // handle case where fragment failed to load
+  if (!fragment) {
+    // eslint-disable-next-line no-console
+    console.warn('Failed to load navigation fragment from', navPath);
+    return;
+  }
+
   // decorate nav DOM
   block.textContent = '';
   const nav = document.createElement('nav');
   nav.id = 'nav';
   while (fragment.firstElementChild) nav.append(fragment.firstElementChild);
 
+  const { topSections, mainSections, bottomSections } = processSectionsWithMetadata(nav);
+  nav.replaceChildren(...mainSections);
+
   const classes = ['brand', 'sections', 'tools'];
   classes.forEach((c, i) => {
     const section = nav.children[i];
     if (section) section.classList.add(`nav-${c}`);
   });
+
+  // create containers for extra sections
+  const createContainer = (sections, containerClass, sectionClass) => {
+    const container = document.createElement('div');
+    container.className = containerClass;
+    sections.forEach((section) => {
+      section.classList.add(sectionClass);
+      container.append(section);
+    });
+    return container;
+  };
+
+  const topContainer = createContainer(topSections, 'nav-top-container', 'nav-top-section');
+  const bottomContainer = createContainer(bottomSections, 'nav-bottom-container', 'nav-bottom-section');
 
   const navBrand = nav.querySelector('.nav-brand');
   const brandLink = navBrand.querySelector('.button');
@@ -166,6 +199,6 @@ export default async function decorate(block) {
 
   const navWrapper = document.createElement('div');
   navWrapper.className = 'nav-wrapper';
-  navWrapper.append(nav);
+  navWrapper.append(topContainer, nav, bottomContainer);
   block.append(navWrapper);
 }

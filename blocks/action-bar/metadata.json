@@ -1,0 +1,40 @@
+{
+  "variantName": "action-bar",
+  "baseBlock": "action-bar",
+  "version": "1.0.0",
+  "created": "2026-02-26T09:35:00.000Z",
+  "sourceContext": {
+    "source": "figma",
+    "figmaFileKey": "kQplMQTStmD7cRMJiG4T6c",
+    "figmaNodeId": "3970:58658",
+    "figmaNodeName": "Like | Save | Share",
+    "figmaUrl": "https://www.figma.com/design/kQplMQTStmD7cRMJiG4T6c/One-AZ-3.1–Market-Master?node-id=3970-58658"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "balanced",
+    "purpose": "actions",
+    "imagePattern": "noimg"
+  },
+  "contentPattern": {
+    "structure": "meta text + icon actions",
+    "buttonCount": 3,
+    "imageCount": 0
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "page action sections",
+      "social interaction bars",
+      "content meta sections"
+    ],
+    "notSuitableFor": [
+      "navigation menus",
+      "image-heavy sections"
+    ]
+  },
+  "usage": {
+    "pagesUsing": [],
+    "reuseCount": 0,
+    "lastUsed": null
+  }
+}

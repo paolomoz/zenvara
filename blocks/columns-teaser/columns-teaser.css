@@ -1,0 +1,150 @@
+/* Import component-specific tokens */
+@import url('columns-teaser-tokens.css');
+
+/* columns-teaser block styles */
+
+.columns-teaser {
+  background: var(--columns-teaser-background);
+  border-radius: var(--columns-teaser-border-radius);
+  box-shadow: var(--columns-teaser-box-shadow);
+}
+
+.columns-teaser > div {
+  display: flex;
+  flex-direction: column;
+  max-width: var(--columns-teaser-max-width);
+  margin: 0 auto;
+  padding: var(--columns-teaser-padding-top) var(--columns-teaser-padding-right) var(--columns-teaser-padding-bottom) var(--columns-teaser-padding-left);
+}
+
+.columns-teaser img {
+  width: 100%;
+}
+
+.columns-teaser > div > div {
+  order: 1;
+}
+
+.columns-teaser > div > div:not(.columns-teaser-img-col) {
+  display: flex;
+  flex-direction: column;
+  gap: var(--columns-teaser-content-gap);
+  justify-content: center;
+}
+
+.columns-teaser > div > .columns-teaser-img-col {
+  order: 0;
+}
+
+.columns-teaser > div > .columns-teaser-img-col img {
+  display: block;
+  border-radius: var(--columns-teaser-image-border-radius);
+}
+
+/* Typography - Headings */
+.columns-teaser h1,
+.columns-teaser h2,
+.columns-teaser h3,
+.columns-teaser h4,
+.columns-teaser h5,
+.columns-teaser h6 {
+  font-family: var(--columns-teaser-heading-font-family);
+  font-size: var(--columns-teaser-heading-font-size);
+  font-weight: var(--columns-teaser-heading-font-weight);
+  font-style: var(--columns-teaser-heading-font-style);
+  line-height: var(--columns-teaser-heading-line-height);
+  letter-spacing: var(--columns-teaser-heading-letter-spacing);
+  text-transform: var(--columns-teaser-heading-text-transform);
+  color: var(--columns-teaser-heading-color);
+  margin-top: var(--columns-teaser-heading-margin-top);
+  margin-bottom: var(--columns-teaser-heading-margin-bottom);
+}
+
+/* Typography - Body */
+.columns-teaser p {
+  font-family: var(--columns-teaser-body-font-family);
+  font-size: var(--columns-teaser-body-font-size);
+  font-weight: var(--columns-teaser-body-font-weight);
+  font-style: var(--columns-teaser-body-font-style);
+  line-height: var(--columns-teaser-body-line-height);
+  letter-spacing: var(--columns-teaser-body-letter-spacing);
+  color: var(--columns-teaser-body-color);
+  margin-top: 0;
+  margin-bottom: var(--columns-teaser-body-margin-bottom);
+}
+
+/* Button styling */
+.columns-teaser a.button:any-link,
+.columns-teaser button.button {
+  font-family: var(--columns-teaser-button-font-family);
+  font-size: var(--columns-teaser-button-font-size);
+  font-weight: var(--columns-teaser-button-font-weight);
+  font-style: var(--columns-teaser-button-font-style);
+  line-height: var(--columns-teaser-button-line-height);
+  letter-spacing: var(--columns-teaser-button-letter-spacing);
+  text-transform: var(--columns-teaser-button-text-transform);
+  color: var(--columns-teaser-button-color);
+  background-color: var(--columns-teaser-button-background);
+  border: var(--columns-teaser-button-border-width) var(--columns-teaser-button-border-style) var(--columns-teaser-button-border-color);
+  border-radius: var(--columns-teaser-button-border-radius);
+  padding: var(--columns-teaser-button-padding-y) var(--columns-teaser-button-padding-x);
+  min-height: var(--columns-teaser-button-min-height);
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color var(--columns-teaser-transition-duration) var(--columns-teaser-transition-timing),
+              border-color var(--columns-teaser-transition-duration) var(--columns-teaser-transition-timing);
+}
+
+.columns-teaser a.button:hover,
+.columns-teaser a.button:focus-visible,
+.columns-teaser button.button:hover,
+.columns-teaser button.button:focus-visible {
+  background-color: var(--columns-teaser-button-hover-background);
+  border-color: var(--columns-teaser-button-hover-border-color);
+  color: var(--columns-teaser-button-hover-color);
+}
+
+/* Dark section - filled buttons */
+.section.dark .columns-teaser a.button:any-link,
+.section.dark .columns-teaser button.button {
+  color: #fff;
+  background-color: #d0006f;
+}
+
+.section.dark .columns-teaser a.button:hover,
+.section.dark .columns-teaser a.button:focus-visible,
+.section.dark .columns-teaser button.button:hover,
+.section.dark .columns-teaser button.button:focus-visible {
+  background-color: #a30058;
+}
+
+.section.dark .columns-teaser h1,
+.section.dark .columns-teaser h2,
+.section.dark .columns-teaser h3,
+.section.dark .columns-teaser h4,
+.section.dark .columns-teaser h5,
+.section.dark .columns-teaser h6,
+.section.dark .columns-teaser p {
+  color: #fff;
+}
+
+/* Desktop layout */
+@media (width >= 900px) {
+  .columns-teaser > div {
+    align-items: center;
+    flex-direction: unset;
+    gap: var(--columns-teaser-gap);
+  }
+
+  .columns-teaser > div > div {
+    flex: 1;
+    order: unset;
+  }
+
+  .columns-teaser > div > div:not(.columns-teaser-img-col) {
+    max-width: var(--columns-teaser-text-col-max-width);
+  }
+}

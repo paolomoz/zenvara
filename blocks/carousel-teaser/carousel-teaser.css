@@ -1,0 +1,241 @@
+/* Import component-specific tokens */
+@import url('./carousel-teaser-tokens.css');
+
+/* carousel-teaser block styles */
+
+.carousel-teaser {
+  position: relative;
+  max-width: var(--carousel-teaser-max-width);
+  margin: 0 auto;
+  padding: var(--carousel-teaser-padding) 0;
+  background: var(--carousel-teaser-background);
+  overflow: visible;
+}
+
+/* Slides container - holds slides and nav buttons */
+.carousel-teaser .carousel-teaser-slides-container {
+  position: relative;
+}
+
+/* Horizontal scrolling slides */
+.carousel-teaser .carousel-teaser-slides {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.carousel-teaser .carousel-teaser-slides::-webkit-scrollbar {
+  display: none;
+}
+
+/* Individual slide - side-by-side layout */
+.carousel-teaser .carousel-teaser-slide {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: var(--carousel-teaser-slide-gap);
+  flex: 0 0 100%;
+  scroll-snap-align: start;
+  min-width: 100%;
+  box-sizing: border-box;
+}
+
+/* Content area - appears on the LEFT (use order to swap) */
+.carousel-teaser .carousel-teaser-slide-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: var(--carousel-teaser-content-gap);
+  order: -1;
+}
+
+/* Image area - appears on the RIGHT */
+.carousel-teaser .carousel-teaser-slide-image {
+  flex: 1;
+  line-height: 0;
+}
+
+.carousel-teaser .carousel-teaser-slide-image picture {
+  display: block;
+}
+
+.carousel-teaser .carousel-teaser-slide-image img {
+  width: 100%;
+  height: auto;
+  border-radius: var(--carousel-teaser-image-border-radius);
+  background: var(--carousel-teaser-image-background);
+  object-fit: cover;
+}
+
+/* Typography - Headings */
+.carousel-teaser .carousel-teaser-slide-content > h2,
+.carousel-teaser .carousel-teaser-slide-content > h3,
+.carousel-teaser .carousel-teaser-slide-content > p:first-child,
+.carousel-teaser .carousel-teaser-slide-content > p:first-child strong {
+  font-family: var(--carousel-teaser-heading-font-family);
+  font-size: var(--carousel-teaser-heading-font-size);
+  font-weight: var(--carousel-teaser-heading-font-weight);
+  font-style: var(--carousel-teaser-heading-font-style);
+  line-height: var(--carousel-teaser-heading-line-height);
+  letter-spacing: var(--carousel-teaser-heading-letter-spacing);
+  text-transform: var(--carousel-teaser-heading-text-transform);
+  color: var(--carousel-teaser-heading-color);
+  margin: 0;
+}
+
+/* Typography - Body */
+.carousel-teaser .carousel-teaser-slide-content > p:not(:first-child, .button-wrapper) {
+  font-family: var(--carousel-teaser-body-font-family);
+  font-size: var(--carousel-teaser-body-font-size);
+  font-weight: var(--carousel-teaser-body-font-weight);
+  font-style: var(--carousel-teaser-body-font-style);
+  line-height: var(--carousel-teaser-body-line-height);
+  letter-spacing: var(--carousel-teaser-body-letter-spacing);
+  color: var(--carousel-teaser-body-color);
+  margin: 0;
+}
+
+/* Button wrapper */
+.carousel-teaser .carousel-teaser-slide-content .button-wrapper {
+  margin-top: 16px;
+  margin-bottom: 0;
+}
+
+/* Button styles */
+.carousel-teaser .carousel-teaser-slide-content a.button {
+  font-family: var(--carousel-teaser-button-font-family);
+  font-size: var(--carousel-teaser-button-font-size);
+  font-weight: var(--carousel-teaser-button-font-weight);
+  font-style: var(--carousel-teaser-button-font-style);
+  line-height: var(--carousel-teaser-button-line-height);
+  color: var(--carousel-teaser-button-color);
+  background-color: var(--carousel-teaser-button-background);
+  border-radius: var(--carousel-teaser-button-border-radius);
+  border-width: var(--carousel-teaser-button-border-width);
+  border-style: var(--carousel-teaser-button-border-style);
+  border-color: var(--carousel-teaser-button-border-color);
+  padding: var(--carousel-teaser-button-padding-y) var(--carousel-teaser-button-padding-x);
+  min-height: var(--carousel-teaser-button-min-height);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color var(--carousel-teaser-transition-duration) var(--carousel-teaser-transition-timing),
+    border-color var(--carousel-teaser-transition-duration) var(--carousel-teaser-transition-timing);
+}
+
+.carousel-teaser .carousel-teaser-slide-content a.button:hover {
+  background-color: var(--carousel-teaser-button-hover-background);
+  border-color: var(--carousel-teaser-button-hover-border-color);
+}
+
+/* Pagination dots navigation */
+.carousel-teaser nav {
+  display: flex;
+  justify-content: center;
+  margin-top: 24px;
+}
+
+.carousel-teaser .carousel-teaser-slide-indicators {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: var(--carousel-teaser-dot-gap);
+  align-items: center;
+}
+
+.carousel-teaser .carousel-teaser-slide-indicator button {
+  width: var(--carousel-teaser-dot-size);
+  height: var(--carousel-teaser-dot-size);
+  border-radius: 50%;
+  border: none;
+  background: var(--carousel-teaser-dot-inactive-color);
+  padding: 0;
+  cursor: pointer;
+  transition: background-color var(--carousel-teaser-transition-duration) var(--carousel-teaser-transition-timing);
+}
+
+.carousel-teaser .carousel-teaser-slide-indicator button[disabled] {
+  background: var(--carousel-teaser-dot-active-color);
+  cursor: default;
+}
+
+/* Navigation arrows container - extends beyond content area */
+.carousel-teaser .carousel-teaser-navigation-buttons {
+  position: absolute;
+  top: 50%;
+  left: -80px;
+  right: -80px;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Navigation arrow buttons */
+.carousel-teaser .carousel-teaser-navigation-buttons button {
+  width: var(--carousel-teaser-arrow-size);
+  height: var(--carousel-teaser-arrow-size);
+  border-radius: 50%;
+  border: var(--carousel-teaser-arrow-border-width) solid var(--carousel-teaser-arrow-border-color);
+  background: var(--carousel-teaser-arrow-background);
+  color: var(--carousel-teaser-arrow-color);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: all;
+  padding: 0;
+  transition: background-color var(--carousel-teaser-transition-duration) var(--carousel-teaser-transition-timing),
+    color var(--carousel-teaser-transition-duration) var(--carousel-teaser-transition-timing);
+}
+
+.carousel-teaser .carousel-teaser-navigation-buttons button:hover {
+  background: var(--carousel-teaser-arrow-hover-background);
+  color: var(--carousel-teaser-arrow-hover-color);
+}
+
+/* Arrow icons using CSS borders */
+.carousel-teaser .carousel-teaser-navigation-buttons button::after {
+  content: '';
+  display: block;
+  width: 12px;
+  height: 12px;
+  border-top: 2px solid currentcolor;
+  border-right: 2px solid currentcolor;
+}
+
+.carousel-teaser .carousel-teaser-navigation-buttons button.slide-prev::after {
+  transform: rotate(-135deg);
+  margin-left: 4px;
+}
+
+.carousel-teaser .carousel-teaser-navigation-buttons button.slide-next::after {
+  transform: rotate(45deg);
+  margin-right: 4px;
+}
+
+/* Responsive - stack on mobile */
+@media (width <= 599px) {
+  .carousel-teaser .carousel-teaser-slide {
+    flex-direction: column;
+  }
+
+  .carousel-teaser .carousel-teaser-slide-content {
+    order: 0;
+    padding: 0 16px;
+  }
+
+  .carousel-teaser .carousel-teaser-navigation-buttons {
+    display: none;
+  }
+}

@@ -1,0 +1,87 @@
+/* Import component-specific tokens */
+@import url('./embed-tokens.css');
+
+/* Embed block styles */
+
+.embed {
+  max-width: var(--embed-max-width);
+  margin: var(--embed-margin);
+  padding: var(--embed-padding);
+  background: var(--embed-background);
+  text-align: center;
+}
+
+.embed > div {
+  display: flex;
+  justify-content: center;
+}
+
+.embed.embed-twitter .twitter-tweet-rendered {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.embed .embed-placeholder {
+  width: 100%;
+  aspect-ratio: var(--embed-aspect-ratio);
+  position: relative;
+  cursor: pointer;
+}
+
+.embed .embed-placeholder > * {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  inset: 0;
+}
+
+.embed .embed-placeholder picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Play button overlay - Figma styled */
+.embed .embed-placeholder-play {
+  z-index: 1;
+}
+
+.embed .embed-placeholder-play button {
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--embed-play-width);
+  height: var(--embed-play-height);
+  background: var(--embed-play-background);
+  border: none;
+  border-radius: var(--embed-play-border-radius);
+  padding: 0;
+  cursor: pointer;
+  transition: background var(--embed-transition-duration) var(--embed-transition-timing);
+}
+
+.embed .embed-placeholder-play button:hover {
+  background: var(--embed-play-hover-background);
+}
+
+/* Play icon triangle */
+.embed .embed-placeholder-play button::before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border-top: 12px solid transparent;
+  border-bottom: 12px solid transparent;
+  border-left: 20px solid var(--embed-play-icon-color);
+  margin-left: 4px;
+}
+
+/* Iframe container for embedded videos */
+.embed iframe {
+  border: 0;
+  width: 100%;
+  aspect-ratio: var(--embed-aspect-ratio);
+}

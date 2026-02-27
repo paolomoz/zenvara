@@ -1,0 +1,78 @@
+VISUAL MEASUREMENT CHECKLIST FOR columns-teaser
+================================================
+Extracted from Figma node: 2215:35998
+Date: 2026-02-25
+
+LAYOUT & DIMENSIONS
+☑ Container width: 1440px (source: Figma frame width="1440")
+☑ Container height: 403px (source: Figma frame height="403.45")
+☑ Content max-width: 1180px (source: Container Content max-w-[1180px], variable site-max-width=1180)
+☑ Container padding: top 40px right 0px bottom 40px left 0px (source: derived from container 403px - content 323px = 80px / 2)
+☑ Grid/Flex gap: 30px (source: gap-[30px] on Teaser: Text and Image frame)
+☑ Column count: 2 (source: visual layout - text left, image right)
+☑ Text column width: 575px (source: cmp-teaser__pretitle w-[575px])
+☑ Description max-width: 577px (source: cmp-teaser__description max-w-[577px])
+
+SPACING (EXACT PIXELS)
+☑ Content sections gap: 16px (source: cmp-teaser__content gap-[16px])
+☑ Pretitle internal gap: 8px (source: cmp-teaser__pretitle gap-[8px])
+☑ Pretitle padding-top: 20px (source: Brand Slot pt-[20px])
+☑ Pretitle padding-bottom: 16px (source: Brand Slot pb-[16px])
+☑ Title internal gap: 8px (source: cmp-teaser__title gap-[8px])
+☑ Description internal gap: 8px (source: cmp-teaser__description gap-[8px])
+☑ Image margin/padding: 0px (source: no padding/margin on image)
+
+COLORS (EXACT HEX + OPACITY)
+☑ Background color: #ffffff (opacity: 100%) (source: variable Background/White=#ffffff)
+☑ Section background: #efefef (source: variable Color/EFEFEF=#efefef, visible in screenshot)
+☑ Primary text color (title): #4f0031 (source: var(--Text-Title-2,#4f0031) on title element)
+☑ Secondary text color (body): #363b3b (source: var(--Text-Body-1,#363b3b) on description)
+☑ Accent/button color: #d0006f (source: button bg-[#d0006f], variable Color/D0006F)
+☑ Button text color: #ffffff (source: button text text-[#ffffff])
+☑ Button border color: #d0006f (source: border-[#d0006f] on button backing)
+☑ Hover background: none specified (source: no hover state in Figma extraction)
+☑ Hover text color: none specified (source: no hover state in Figma extraction)
+
+TYPOGRAPHY (ALL PROPERTIES)
+☑ Heading font-family: Lexia, sans-serif (source: font-['Lexia',sans-serif], variable Font-Family/Lexia=Lexia)
+☑ Heading font-size: 26px (source: text-[26px], variable Headings/Lexia-26, Tokens/Font Size/26=26)
+☑ Heading font-weight: 400 (source: font-normal, variable Weight|Style/400=400)
+☑ Heading line-height: 34px (source: leading-[34px], variable Tokens/Line Height/34=34)
+☑ Heading letter-spacing: 0 (source: no letter-spacing in extraction)
+☑ Heading text-transform: none (source: no text-transform in extraction)
+☑ Heading font-style: normal (source: font-normal in extraction)
+☑ Body font-family: Inter, sans-serif (source: font-['Inter',sans-serif], variable Font-Family/Inter=Inter)
+☑ Body font-size: 18px (source: text-[18px], variable Body/Inter-18, Tokens/Font Size/18=18)
+☑ Body font-weight: 400 (source: font-normal, variable Weight|Style/400=400)
+☑ Body line-height: 28px (source: leading-[28px], variable Tokens/Line Height/28=28)
+☑ Body letter-spacing: 0 (source: no letter-spacing in extraction)
+☑ Body font-style: normal (source: font-normal in extraction)
+☑ Button font-family: Inter, sans-serif (source: font-['Inter',sans-serif])
+☑ Button font-size: 16px (source: text-[16px], variable Tokens/Font Size/16=16)
+☑ Button font-weight: 600 (source: font-semibold, variable Weight|Style/600=600)
+☑ Button line-height: 24px (source: leading-[24px], variable Tokens/Line Height/24=24)
+
+BORDERS & RADIUS
+☑ Container border width: 0px (source: no border classes in extraction)
+☑ Container border style: none (source: no border present)
+☑ Container border color: N/A (source: no border present)
+☑ Container border radius: 0px (source: no rounded classes in extraction)
+☑ Button border width: 1px (source: border-[1px] on button backing)
+☑ Button border style: solid (source: border-solid on button backing)
+☑ Button border color: #d0006f (source: border-[#d0006f])
+☑ Button border radius: 4px (source: rounded-[4px] on button backing)
+
+SHADOWS (EXACT VALUES)
+☑ Box-shadow: none (source: no shadow classes in extraction)
+
+EFFECTS & TRANSITIONS
+☑ Hover transform: none (source: no hover state in Figma extraction)
+☑ Transition duration: 0ms (source: no transitions in Figma)
+☑ Transition timing: none (source: no transitions in Figma)
+☑ Opacity changes: none (source: no opacity changes in extraction)
+
+BUTTON DIMENSIONS
+☑ Button padding-x: 16px (source: px-[16px] on cmp-button)
+☑ Button padding-y: 8px (source: py-[8px] on cmp-button)
+☑ Button min-height: 42px (source: min-h-[42px] on cmp-button)
+☑ Button width: 84px (source: w-[84px] on backing)

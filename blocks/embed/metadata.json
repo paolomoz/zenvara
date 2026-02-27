@@ -1,0 +1,41 @@
+{
+  "variantName": "embed",
+  "baseBlock": "embed",
+  "version": "1.0.0",
+  "created": "2026-02-26T10:07:00.000Z",
+  "sourceContext": {
+    "source": "figma",
+    "figmaFileKey": "kQplMQTStmD7cRMJiG4T6c",
+    "figmaNodeId": "2243:39205",
+    "figmaNodeName": "Video Component",
+    "figmaUrl": "https://www.figma.com/design/kQplMQTStmD7cRMJiG4T6c/One-AZ-3.1–Market-Master?node-id=2243-39205"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "neutral",
+    "density": "standard",
+    "purpose": "media-display",
+    "imagePattern": "video-embed"
+  },
+  "contentPattern": {
+    "structure": "video with play button overlay",
+    "buttonCount": 1,
+    "imageCount": 1
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "video embeds",
+      "YouTube videos",
+      "Vimeo videos",
+      "social media posts"
+    ],
+    "notSuitableFor": [
+      "static images",
+      "image galleries"
+    ]
+  },
+  "usage": {
+    "pagesUsing": [],
+    "reuseCount": 0,
+    "lastUsed": null
+  }
+}

@@ -1,0 +1,45 @@
+/* blocks/title/title-tokens.css */
+
+/* All values extracted from title-measurements.txt */
+
+.title {
+  /* ===== LAYOUT & DIMENSIONS ===== */
+  --title-max-width: 1180px;
+  --title-gap: 8px;
+
+  /* ===== CONTAINER COLORS ===== */
+  --title-background: transparent;
+
+  /* ===== SPACING ===== */
+  --title-heading-padding-top: 20px;
+  --title-heading-padding-bottom: 0;
+  --title-body-padding-top: 16px;
+  --title-body-padding-bottom: 16px;
+
+  /* ===== TYPOGRAPHY - HEADINGS ===== */
+  --title-heading-font-family: "Lexia VF", sans-serif;
+  --title-heading-font-size: 36px;
+  --title-heading-font-weight: 400;
+  --title-heading-font-style: normal;
+  --title-heading-line-height: 40px;
+  --title-heading-letter-spacing: normal;
+  --title-heading-text-transform: none;
+  --title-heading-color: #830051;
+
+  /* ===== TYPOGRAPHY - BODY ===== */
+  --title-body-font-family: "Inter", sans-serif;
+  --title-body-font-size: 16px;
+  --title-body-font-weight: 400;
+  --title-body-font-style: normal;
+  --title-body-line-height: 24px;
+  --title-body-letter-spacing: normal;
+  --title-body-color: #363b3b;
+
+  /* ===== BORDERS & RADIUS ===== */
+  --title-border-width: 0;
+  --title-border-style: none;
+  --title-border-radius: 0;
+
+  /* ===== SHADOWS ===== */
+  --title-box-shadow: none;
+}

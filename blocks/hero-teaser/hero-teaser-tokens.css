@@ -1,0 +1,67 @@
+/* blocks/hero-teaser/hero-teaser-tokens.css */
+
+/* ALL values extracted from hero-teaser-measurements.txt */
+
+.hero-teaser {
+  /* ===== LAYOUT & DIMENSIONS ===== */
+  --hero-teaser-max-width: 1180px;
+  --hero-teaser-min-height: 480px;
+  --hero-teaser-padding-top: 40px;
+  --hero-teaser-padding-right: 20px;
+  --hero-teaser-padding-bottom: 40px;
+  --hero-teaser-padding-left: 20px;
+  --hero-teaser-content-gap: 16px;
+
+  /* ===== COLORS ===== */
+  --hero-teaser-background: #000;
+  --hero-teaser-image-opacity: 0.75;
+  --hero-teaser-text-color: #fff;
+
+  /* ===== TYPOGRAPHY - HEADING ===== */
+  --hero-teaser-heading-font-family: 'Lexia', serif;
+  --hero-teaser-heading-font-size: 56px;
+  --hero-teaser-heading-font-weight: 400;
+  --hero-teaser-heading-font-style: normal;
+  --hero-teaser-heading-line-height: 60px;
+  --hero-teaser-heading-letter-spacing: 0;
+  --hero-teaser-heading-text-transform: none;
+  --hero-teaser-heading-color: #fff;
+
+  /* ===== TYPOGRAPHY - BODY ===== */
+  --hero-teaser-body-font-family: 'Inter', sans-serif;
+  --hero-teaser-body-font-size: 18px;
+  --hero-teaser-body-font-weight: 400;
+  --hero-teaser-body-font-style: normal;
+  --hero-teaser-body-line-height: 28px;
+  --hero-teaser-body-letter-spacing: 0;
+  --hero-teaser-body-color: #fff;
+  --hero-teaser-body-max-width: 577px;
+
+  /* ===== BUTTON ===== */
+  --hero-teaser-button-font-family: 'Inter', sans-serif;
+  --hero-teaser-button-font-size: 16px;
+  --hero-teaser-button-font-weight: 600;
+  --hero-teaser-button-font-style: normal;
+  --hero-teaser-button-line-height: 24px;
+  --hero-teaser-button-letter-spacing: 0;
+  --hero-teaser-button-text-transform: none;
+  --hero-teaser-button-color: #fff;
+  --hero-teaser-button-background: #d0006f;
+  --hero-teaser-button-border-width: 1px;
+  --hero-teaser-button-border-style: solid;
+  --hero-teaser-button-border-color: #d0006f;
+  --hero-teaser-button-border-radius: 4px;
+  --hero-teaser-button-padding-x: 16px;
+  --hero-teaser-button-padding-y: 8px;
+  --hero-teaser-button-min-height: 42px;
+
+  /* ===== HOVER STATES ===== */
+  --hero-teaser-button-hover-background: #a80059;
+  --hero-teaser-button-hover-border-color: #a80059;
+
+  /* ===== BORDERS & RADIUS ===== */
+  --hero-teaser-border-radius: 0;
+
+  /* ===== SHADOWS ===== */
+  --hero-teaser-box-shadow: none;
+}

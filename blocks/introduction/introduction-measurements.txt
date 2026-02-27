@@ -1,0 +1,59 @@
+VISUAL MEASUREMENT CHECKLIST FOR introduction
+================================================
+Extracted from Figma node: 2214:33362
+Date: 2026-02-25
+
+LAYOUT & DIMENSIONS
+☑ Container width: 1440px (source: instance width="1440" in metadata)
+☑ Container height: auto / 174px (source: instance height="174" in metadata, content-driven)
+☑ Container padding: top 0px right 0px bottom 0px left 0px (source: outer containers have no padding, inner containers handle spacing)
+☑ Grid/Flex gap: 0px (source: two stacked containers with no explicit gap, vertical stack)
+☑ Column count: 1 (source: single-column layout, flex-col in design_context)
+☑ Content max-width: 1180px (source: max-w-[1180px] in both child containers, confirmed by variable "site-max-width": "1180")
+
+SPACING (EXACT PIXELS)
+☑ Title container padding-top: 20px (source: pt-[20px] on Title frame I2214:33362;2499:7473)
+☑ Title container padding-bottom: 0px (source: no bottom padding in Title frame)
+☑ Body container padding-top: 16px (source: py-[16px] on Text frame I2214:33362;2499:7483)
+☑ Body container padding-bottom: 16px (source: py-[16px] on Text frame I2214:33362;2499:7483)
+☑ Gap between heading and body: 0px (source: containers stacked with their own internal padding)
+☑ Image margin/padding: N/A (source: no images in this component)
+
+COLORS (EXACT HEX + OPACITY)
+☑ Background color: #ffffff00 (opacity: 0%) (source: bg-[var(--Background-Transparent,#ffffff00)] in both containers)
+☑ Primary text color (heading): #830051 (opacity: 100%) (source: text-[color:var(--Text-Title-1,#830051)] in heading node)
+☑ Secondary text color (body): #363b3b (opacity: 100%) (source: text-[color:var(--Text-Body-1,#363b3b)] in body node)
+☑ Accent/link color: N/A (source: no links or accent elements in this component)
+☑ Border color: none (source: no border elements in extraction)
+☑ Hover background: N/A (source: no hover states in this component)
+☑ Hover text color: N/A (source: no hover states in this component)
+
+TYPOGRAPHY (ALL PROPERTIES)
+☑ Heading font-family: "Lexia VF", sans-serif (source: font-['Lexia_VF',sans-serif] in heading node, confirmed by variable "Font-Family/Lexia VF": "Lexia VF")
+☑ Heading font-size: 46px (source: text-[46px] in heading node, confirmed by variable "Tokens/Font Size/46": "46")
+☑ Heading font-weight: 400 (source: font-normal in heading node, confirmed by variable "Weight | Style/400": "400")
+☑ Heading line-height: 50px (source: leading-[50px] in heading node, confirmed by variable "Tokens/Line Height/50": "50")
+☑ Heading letter-spacing: normal (source: no letter-spacing classes in heading extraction)
+☑ Heading text-transform: none (source: no text-transform classes in heading extraction)
+☑ Heading font-style: normal (source: font-normal in heading extraction, no italic class)
+☑ Body font-family: "Inter", sans-serif (source: font-['Inter',sans-serif] in body node, confirmed by variable "Font-Family/Inter": "Inter")
+☑ Body font-size: 16px (source: text-[16px] in body node, confirmed by variable "Tokens/Font Size/16": "16")
+☑ Body font-weight: 400 (source: font-normal in body node, confirmed by variable "Weight | Style/400": "400")
+☑ Body line-height: 24px (source: leading-[24px] in body node, confirmed by variable "Tokens/Line Height/24": "24")
+☑ Body letter-spacing: normal (source: no letter-spacing classes in body extraction)
+☑ Body font-style: normal (source: font-normal in body extraction, no italic class)
+
+BORDERS & RADIUS
+☑ Border width: 0px (source: no border classes in any extracted container)
+☑ Border style: none (source: no border styling in extracted data)
+☑ Border color: N/A (source: no border present)
+☑ Border radius: 0px (source: no rounded-* classes in any extracted container)
+
+SHADOWS (EXACT VALUES)
+☑ Box-shadow: none (source: no shadow classes or properties in any extracted node)
+
+EFFECTS & TRANSITIONS
+☑ Hover transform: none (source: no hover states in this component)
+☑ Transition duration: none (source: no transitions in this component)
+☑ Transition timing: none (source: no transitions in this component)
+☑ Opacity changes: none (source: no opacity effects in extraction)

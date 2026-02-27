@@ -1,0 +1,45 @@
+/* blocks/action-bar/action-bar-tokens.css */
+/* All values extracted from action-bar-measurements.txt */
+
+.action-bar {
+  /* ===== LAYOUT & DIMENSIONS ===== */
+  --action-bar-max-width: 1180px;
+  --action-bar-padding-top: 20px;
+  --action-bar-padding-right: 0;
+  --action-bar-padding-bottom: 20px;
+  --action-bar-padding-left: 0;
+  --action-bar-display: flex;
+  --action-bar-justify: space-between;
+  --action-bar-align: center;
+
+  /* ===== CONTAINER COLORS ===== */
+  --action-bar-background: transparent;
+
+  /* ===== TYPOGRAPHY - BODY/META TEXT ===== */
+  --action-bar-text-font-family: 'Lexia', sans-serif;
+  --action-bar-text-font-size: 24px;
+  --action-bar-text-font-weight: 400;
+  --action-bar-text-font-style: normal;
+  --action-bar-text-line-height: 28px;
+  --action-bar-text-letter-spacing: 0;
+  --action-bar-text-color: #363b3b;
+
+  /* ===== ICON BUTTONS ===== */
+  --action-bar-icon-size: 40px;
+  --action-bar-icon-gap: 4px;
+  --action-bar-icon-color: #d0006f;
+  --action-bar-icon-hover-color: #830051;
+  --action-bar-icon-background: transparent;
+  --action-bar-icon-hover-background: rgba(208, 0, 111, 0.1);
+  --action-bar-icon-border-radius: 50%;
+
+  /* ===== TRANSITIONS ===== */
+  --action-bar-transition-duration: 200ms;
+  --action-bar-transition-timing: ease;
+
+  /* ===== BORDERS ===== */
+  --action-bar-border-width: 0;
+  --action-bar-border-style: none;
+  --action-bar-border-color: transparent;
+  --action-bar-border-radius: 0;
+}

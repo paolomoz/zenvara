@@ -1,4 +1,54 @@
 /* stylelint-disable max-line-length */
+
+/* Brand fonts - Lexia (serif) and Inter (sans-serif) */
+@font-face {
+  font-family: 'Lexia';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Georgia');
+}
+
+@font-face {
+  font-family: 'Lexia';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Georgia Bold'), local('Georgia-Bold'), local('Georgia');
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Inter'), local('Arial'), local('Helvetica');
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: local('Inter Medium'), local('Inter-Medium'), local('Arial'), local('Helvetica');
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: local('Inter SemiBold'), local('Inter-SemiBold'), local('Arial Bold'), local('Helvetica Bold');
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Inter Bold'), local('Inter-Bold'), local('Arial Bold'), local('Helvetica Bold');
+}
+
 @font-face {
   font-family: roboto-condensed;
   font-style: normal;

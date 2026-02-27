@@ -1,0 +1,81 @@
+/* blocks/columns-teaser/columns-teaser-tokens.css */
+
+/* All values extracted from columns-teaser-measurements.txt */
+
+.columns-teaser {
+  /* ===== LAYOUT & DIMENSIONS ===== */
+  --columns-teaser-max-width: 1180px;
+  --columns-teaser-padding-top: 40px;
+  --columns-teaser-padding-right: 0;
+  --columns-teaser-padding-bottom: 40px;
+  --columns-teaser-padding-left: 0;
+  --columns-teaser-gap: 30px;
+  --columns-teaser-columns: 2;
+  --columns-teaser-text-col-max-width: 577px;
+
+  /* ===== CONTAINER COLORS ===== */
+  --columns-teaser-background: #efefef;
+
+  /* ===== TYPOGRAPHY - HEADINGS ===== */
+  --columns-teaser-heading-font-family: 'Lexia', sans-serif;
+  --columns-teaser-heading-font-size: 26px;
+  --columns-teaser-heading-font-weight: 400;
+  --columns-teaser-heading-font-style: normal;
+  --columns-teaser-heading-line-height: 34px;
+  --columns-teaser-heading-letter-spacing: 0;
+  --columns-teaser-heading-text-transform: none;
+  --columns-teaser-heading-color: #4f0031;
+  --columns-teaser-heading-margin-top: 0;
+  --columns-teaser-heading-margin-bottom: 0;
+
+  /* ===== TYPOGRAPHY - BODY ===== */
+  --columns-teaser-body-font-family: 'Inter', sans-serif;
+  --columns-teaser-body-font-size: 18px;
+  --columns-teaser-body-font-weight: 400;
+  --columns-teaser-body-font-style: normal;
+  --columns-teaser-body-line-height: 28px;
+  --columns-teaser-body-letter-spacing: 0;
+  --columns-teaser-body-color: #363b3b;
+  --columns-teaser-body-margin-bottom: 0;
+
+  /* ===== TYPOGRAPHY - BUTTON (Ghost/Outlined style) ===== */
+  --columns-teaser-button-font-family: 'Inter', sans-serif;
+  --columns-teaser-button-font-size: 16px;
+  --columns-teaser-button-font-weight: 600;
+  --columns-teaser-button-font-style: normal;
+  --columns-teaser-button-line-height: 24px;
+  --columns-teaser-button-letter-spacing: 0;
+  --columns-teaser-button-text-transform: none;
+  --columns-teaser-button-color: #d0006f;
+  --columns-teaser-button-background: transparent;
+  --columns-teaser-button-border-width: 2px;
+  --columns-teaser-button-border-style: solid;
+  --columns-teaser-button-border-color: #d0006f;
+  --columns-teaser-button-border-radius: 4px;
+  --columns-teaser-button-padding-x: 16px;
+  --columns-teaser-button-padding-y: 8px;
+  --columns-teaser-button-min-height: 42px;
+
+  /* ===== HOVER STATES ===== */
+  --columns-teaser-button-hover-background: #d0006f;
+  --columns-teaser-button-hover-border-color: #d0006f;
+  --columns-teaser-button-hover-color: #fff;
+
+  /* ===== BORDERS & RADIUS ===== */
+  --columns-teaser-border-width: 0;
+  --columns-teaser-border-style: none;
+  --columns-teaser-border-color: transparent;
+  --columns-teaser-border-radius: 0;
+
+  /* ===== SHADOWS ===== */
+  --columns-teaser-box-shadow: none;
+
+  /* ===== SPACING BETWEEN ELEMENTS ===== */
+  --columns-teaser-content-gap: 16px;
+  --columns-teaser-image-margin-bottom: 0;
+  --columns-teaser-image-border-radius: 8px;
+
+  /* ===== TRANSITIONS ===== */
+  --columns-teaser-transition-duration: 200ms;
+  --columns-teaser-transition-timing: ease;
+}

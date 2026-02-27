@@ -1,0 +1,58 @@
+{
+  "definitions": [
+    {
+      "title": "Columns Teaser",
+      "id": "columns-teaser",
+      "model": "columns-teaser",
+      "filter": "columns-teaser",
+      "plugins": {
+        "da": {
+          "name": "columns-teaser",
+          "rows": 1,
+          "columns": 2,
+          "fields": [
+            {
+              "name": "content",
+              "selector": "div:nth-child(1)>div"
+            },
+            {
+              "name": "image",
+              "selector": "div:nth-child(2)>div:nth-child(2)>picture>img[src]"
+            },
+            {
+              "name": "imageAlt",
+              "selector": "div:nth-child(2)>div:nth-child(2)>picture>img[alt]"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "models": [
+    {
+      "id": "columns-teaser",
+      "fields": [
+        {
+          "component": "richtext",
+          "name": "content",
+          "label": "Content",
+          "valueType": "string"
+        },
+        {
+          "component": "reference",
+          "name": "image",
+          "label": "Image",
+          "valueType": "string",
+          "multi": false
+        },
+        {
+          "component": "text",
+          "name": "imageAlt",
+          "label": "Image Alt Text",
+          "valueType": "string"
+        }
+      ]
+    }
+  ],
+  "filters": []
+}

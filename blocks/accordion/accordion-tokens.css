@@ -1,0 +1,49 @@
+/* blocks/accordion/accordion-tokens.css */
+
+/* All values extracted from Figma Accordion Section component */
+
+.accordion {
+  /* ===== LAYOUT & DIMENSIONS ===== */
+  --accordion-max-width: 1180px;
+  --accordion-header-padding-top: 40px;
+  --accordion-header-padding-bottom: 20px;
+  --accordion-header-padding-x: 0;
+  --accordion-body-padding-y: 20px;
+  --accordion-body-padding-x: 0;
+  --accordion-gap: 24px;
+
+  /* ===== CONTAINER COLORS ===== */
+  --accordion-background: #fff;
+  --accordion-header-background: #fff;
+  --accordion-header-hover-background: #f8f8f8;
+  --accordion-body-background: #fff;
+
+  /* ===== BORDERS ===== */
+  --accordion-border-width: 1px;
+  --accordion-border-style: solid;
+  --accordion-border-color: #ebefee;
+  --accordion-item-spacing: 0;
+
+  /* ===== TYPOGRAPHY - TITLE ===== */
+  --accordion-title-font-family: 'Lexia', serif;
+  --accordion-title-font-size: 36px;
+  --accordion-title-font-weight: 400;
+  --accordion-title-line-height: 40px;
+  --accordion-title-color: #830051;
+
+  /* ===== TYPOGRAPHY - BODY ===== */
+  --accordion-body-font-family: 'Inter', sans-serif;
+  --accordion-body-font-size: 18px;
+  --accordion-body-font-weight: 400;
+  --accordion-body-line-height: 28px;
+  --accordion-body-color: #363b3b;
+
+  /* ===== ICON ===== */
+  --accordion-icon-size: 20px;
+  --accordion-icon-color: #363b3b;
+  --accordion-icon-border-width: 2px;
+
+  /* ===== TRANSITIONS ===== */
+  --accordion-transition-duration: 200ms;
+  --accordion-transition-timing: ease;
+}

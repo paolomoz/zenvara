@@ -1,0 +1,74 @@
+/* blocks/carousel-teaser/carousel-teaser-tokens.css */
+
+/* ALL values extracted from Figma node 2214:33370 */
+
+.carousel-teaser {
+  /* ===== LAYOUT & DIMENSIONS ===== */
+  --carousel-teaser-max-width: 1180px;
+  --carousel-teaser-padding: 40px;
+  --carousel-teaser-slide-gap: 30px;
+  --carousel-teaser-content-gap: 16px;
+
+  /* ===== CONTAINER COLORS ===== */
+  --carousel-teaser-background: #fff;
+
+  /* ===== TYPOGRAPHY - HEADINGS ===== */
+  --carousel-teaser-heading-font-family: 'Lexia', serif;
+  --carousel-teaser-heading-font-size: 26px;
+  --carousel-teaser-heading-font-weight: 400;
+  --carousel-teaser-heading-font-style: normal;
+  --carousel-teaser-heading-line-height: 34px;
+  --carousel-teaser-heading-letter-spacing: 0;
+  --carousel-teaser-heading-text-transform: none;
+  --carousel-teaser-heading-color: #4f0031;
+
+  /* ===== TYPOGRAPHY - BODY ===== */
+  --carousel-teaser-body-font-family: 'Inter', sans-serif;
+  --carousel-teaser-body-font-size: 18px;
+  --carousel-teaser-body-font-weight: 400;
+  --carousel-teaser-body-font-style: normal;
+  --carousel-teaser-body-line-height: 28px;
+  --carousel-teaser-body-letter-spacing: 0;
+  --carousel-teaser-body-color: #363b3b;
+
+  /* ===== TYPOGRAPHY - BUTTON ===== */
+  --carousel-teaser-button-font-family: 'Inter', sans-serif;
+  --carousel-teaser-button-font-size: 16px;
+  --carousel-teaser-button-font-weight: 600;
+  --carousel-teaser-button-font-style: normal;
+  --carousel-teaser-button-line-height: 24px;
+  --carousel-teaser-button-color: #fff;
+  --carousel-teaser-button-background: #d0006f;
+  --carousel-teaser-button-border-radius: 4px;
+  --carousel-teaser-button-border-width: 1px;
+  --carousel-teaser-button-border-style: solid;
+  --carousel-teaser-button-border-color: #d0006f;
+  --carousel-teaser-button-padding-x: 16px;
+  --carousel-teaser-button-padding-y: 8px;
+  --carousel-teaser-button-min-height: 42px;
+  --carousel-teaser-button-hover-background: #a80059;
+  --carousel-teaser-button-hover-border-color: #a80059;
+
+  /* ===== NAVIGATION ARROWS ===== */
+  --carousel-teaser-arrow-size: 48px;
+  --carousel-teaser-arrow-border-width: 2px;
+  --carousel-teaser-arrow-border-color: #d0006f;
+  --carousel-teaser-arrow-color: #d0006f;
+  --carousel-teaser-arrow-background: transparent;
+  --carousel-teaser-arrow-hover-background: #d0006f;
+  --carousel-teaser-arrow-hover-color: #fff;
+
+  /* ===== PAGINATION DOTS ===== */
+  --carousel-teaser-dot-size: 8px;
+  --carousel-teaser-dot-gap: 16px;
+  --carousel-teaser-dot-active-color: #d0006f;
+  --carousel-teaser-dot-inactive-color: #363b3b;
+
+  /* ===== IMAGE ===== */
+  --carousel-teaser-image-border-radius: 8px;
+  --carousel-teaser-image-background: #ebefee;
+
+  /* ===== TRANSITIONS ===== */
+  --carousel-teaser-transition-duration: 200ms;
+  --carousel-teaser-transition-timing: ease;
+}

@@ -1,0 +1,30 @@
+/* blocks/embed/embed-tokens.css */
+
+/* All values extracted from Figma Video Component */
+
+.embed {
+  /* ===== LAYOUT & DIMENSIONS ===== */
+  --embed-max-width: 1180px;
+  --embed-margin: 0 auto;
+  --embed-padding: 20px 0;
+  --embed-gap: 8px;
+
+  /* ===== ASPECT RATIO ===== */
+  --embed-aspect-ratio: 16 / 9;
+
+  /* ===== CONTAINER ===== */
+  --embed-background: #fff;
+  --embed-border-radius: 0;
+
+  /* ===== PLAY BUTTON ===== */
+  --embed-play-width: 84px;
+  --embed-play-height: 62px;
+  --embed-play-background: rgba(0, 0, 0, 0.5);
+  --embed-play-border-radius: 4px;
+  --embed-play-icon-color: #fff;
+  --embed-play-hover-background: rgba(0, 0, 0, 0.7);
+
+  /* ===== TRANSITIONS ===== */
+  --embed-transition-duration: 200ms;
+  --embed-transition-timing: ease;
+}

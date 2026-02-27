@@ -1,0 +1,83 @@
+/* blocks/cards-teaser/cards-teaser-tokens.css */
+
+/* ALL values extracted from cards-teaser-measurements.txt */
+
+.cards-teaser-container,
+.cards-teaser-wrapper,
+.cards-teaser {
+  /* ===== LAYOUT & DIMENSIONS ===== */
+  --cards-teaser-max-width: 1180px;
+  --cards-teaser-padding-top: 40px;
+  --cards-teaser-padding-bottom: 40px;
+  --cards-teaser-padding-left: 0;
+  --cards-teaser-padding-right: 0;
+  --cards-teaser-gap: 10px;
+  --cards-teaser-columns-min: 248px;
+  --cards-teaser-columns: 4;
+
+  /* ===== CONTAINER COLORS ===== */
+  --cards-teaser-background: #ebefee;
+
+  /* ===== CARD PROPERTIES ===== */
+  --cards-teaser-card-background: #fff;
+  --cards-teaser-card-border-radius: 8px;
+  --cards-teaser-card-border-width: 0;
+  --cards-teaser-card-border-style: none;
+  --cards-teaser-card-border-color: transparent;
+  --cards-teaser-card-overflow: hidden;
+  --cards-teaser-card-shadow: none;
+
+  /* ===== CARD CONTENT SPACING ===== */
+  --cards-teaser-content-padding: 24px;
+  --cards-teaser-content-gap: 16px;
+
+  /* ===== TYPOGRAPHY - HEADINGS ===== */
+  --cards-teaser-heading-font-family: 'Lexia', serif;
+  --cards-teaser-heading-font-size: 26px;
+  --cards-teaser-heading-font-weight: 400;
+  --cards-teaser-heading-font-style: normal;
+  --cards-teaser-heading-line-height: 34px;
+  --cards-teaser-heading-letter-spacing: 0;
+  --cards-teaser-heading-text-transform: none;
+  --cards-teaser-heading-color: #4f0031;
+
+  /* ===== TYPOGRAPHY - BODY ===== */
+  --cards-teaser-body-font-family: 'Inter', sans-serif;
+  --cards-teaser-body-font-size: 18px;
+  --cards-teaser-body-font-weight: 400;
+  --cards-teaser-body-font-style: normal;
+  --cards-teaser-body-line-height: 28px;
+  --cards-teaser-body-letter-spacing: 0;
+  --cards-teaser-body-color: #363b3b;
+
+  /* ===== TYPOGRAPHY - BUTTON ===== */
+  --cards-teaser-button-font-family: 'Inter', sans-serif;
+  --cards-teaser-button-font-size: 16px;
+  --cards-teaser-button-font-weight: 600;
+  --cards-teaser-button-font-style: normal;
+  --cards-teaser-button-line-height: 24px;
+  --cards-teaser-button-letter-spacing: 0;
+  --cards-teaser-button-text-transform: none;
+  --cards-teaser-button-color: #fff;
+  --cards-teaser-button-background: #d0006f;
+  --cards-teaser-button-border-radius: 4px;
+  --cards-teaser-button-border-width: 1px;
+  --cards-teaser-button-border-style: solid;
+  --cards-teaser-button-border-color: #d0006f;
+  --cards-teaser-button-padding-x: 16px;
+  --cards-teaser-button-padding-y: 8px;
+  --cards-teaser-button-min-height: 42px;
+
+  /* ===== HOVER STATES ===== */
+  --cards-teaser-button-hover-background: #a80059;
+  --cards-teaser-button-hover-border-color: #a80059;
+  --cards-teaser-card-hover-shadow: none;
+  --cards-teaser-card-hover-transform: none;
+
+  /* ===== TRANSITIONS ===== */
+  --cards-teaser-transition-duration: 200ms;
+  --cards-teaser-transition-timing: ease;
+
+  /* ===== IMAGE ===== */
+  --cards-teaser-image-aspect-ratio: 4 / 3;
+}

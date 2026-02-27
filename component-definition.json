@@ -1,0 +1,147 @@
+{
+  "groups": [
+    {
+      "title": "Default Content",
+      "id": "default",
+      "components": [
+        {
+          "title": "Text",
+          "id": "text",
+          "model": "text",
+          "plugins": {
+            "da": {
+              "name": "text",
+              "type": "text"
+            }
+          }
+        },
+        {
+          "title": "Image",
+          "id": "image",
+          "model": "image",
+          "plugins": {
+            "da": {
+              "name": "image",
+              "type": "image",
+              "fields": [
+                {
+                  "name": "imageAlt",
+                  "selector": "img[alt]"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "title": "Sections",
+      "id": "sections",
+      "components": [
+        {
+          "title": "Section",
+          "id": "section",
+          "plugins": {
+            "da": {
+              "unsafeHTML": "<div></div>"
+            }
+          },
+          "filter": "section",
+          "model": "section"
+        }
+      ]
+    },
+    {
+      "title": "Blocks",
+      "id": "blocks",
+      "components": [
+        {
+          "title": "Cards Teaser",
+          "id": "cards-teaser",
+          "model": "cards-teaser",
+          "filter": "cards-teaser",
+          "plugins": {
+            "da": {
+              "rows": 1,
+              "columns": 2
+            }
+          }
+        },
+        {
+          "title": "Card Teaser Item",
+          "id": "card-teaser",
+          "model": "card-teaser",
+          "plugins": {
+            "da": {
+              "rows": 1,
+              "columns": 2,
+              "fields": [
+                {
+                  "name": "image",
+                  "selector": "div:nth-child(1)>picture>img[src]"
+                },
+                {
+                  "name": "imageAlt",
+                  "selector": "div:nth-child(1)>picture>img[alt]"
+                },
+                {
+                  "name": "text",
+                  "selector": "div:nth-child(2)"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "title": "Columns Teaser",
+          "id": "columns-teaser",
+          "model": "columns-teaser",
+          "filter": "columns-teaser",
+          "plugins": {
+            "da": {
+              "name": "columns-teaser",
+              "rows": 1,
+              "columns": 2,
+              "fields": [
+                {
+                  "name": "content",
+                  "selector": "div:nth-child(1)>div"
+                },
+                {
+                  "name": "image",
+                  "selector": "div:nth-child(2)>div:nth-child(2)>picture>img[src]"
+                },
+                {
+                  "name": "imageAlt",
+                  "selector": "div:nth-child(2)>div:nth-child(2)>picture>img[alt]"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "title": "Introduction",
+          "id": "introduction",
+          "model": "introduction",
+          "filter": "introduction",
+          "plugins": {
+            "da": {
+              "name": "introduction"
+            }
+          }
+        },
+        {
+          "title": "Title",
+          "id": "title",
+          "model": "title",
+          "filter": "title",
+          "plugins": {
+            "da": {
+              "name": "title"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
