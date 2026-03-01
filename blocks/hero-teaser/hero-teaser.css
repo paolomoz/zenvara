@@ -58,13 +58,18 @@
   display: flex;
   flex-direction: column;
   gap: var(--hero-teaser-content-gap);
-  z-index: 1;
+  z-index: 2;
 }
 
 .hero-teaser > div:last-child > div {
   display: flex;
   flex-direction: column;
   gap: var(--hero-teaser-content-gap);
+}
+
+.hero-teaser > div:last-child > div:last-child {
+  position: relative;
+  z-index: 1;
 }
 
 .hero-teaser.no-image h1,
@@ -75,6 +80,16 @@
 .hero-teaser.no-image h6,
 .hero-teaser.no-image p {
   color: var(--text-color);
+}
+
+/* Gradient overlay for text contrast */
+.hero-teaser::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(to right, rgb(0 0 0 / 60%) 0%, rgb(0 0 0 / 30%) 50%, transparent 100%);
+  pointer-events: none;
 }
 
 /* Background image */
